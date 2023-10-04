@@ -5,7 +5,7 @@
               <table class="table table-sm table-borderless" cellspacing="0">
               {%- assign news = site.news | reverse -%}
               {% if include.limit %}
-              {% assign news_limit = 15 %}
+              {% assign news_limit = 10 %}
               {% else %}
               {% assign news_limit = news_size %}
               {% endif %}

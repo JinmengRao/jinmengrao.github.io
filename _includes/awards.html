@@ -5,7 +5,7 @@
               <table class="table table-sm table-borderless" cellspacing="0">
               {%- assign awards = site.awards | reverse -%}
               {% if include.limit %}
-              {% assign awards_limit = 15 %}
+              {% assign awards_limit = 10 %}
               {% else %}
               {% assign awards_limit = awards_size %}
               {% endif %}
