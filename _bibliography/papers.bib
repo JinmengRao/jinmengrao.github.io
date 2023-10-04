@@ -3,33 +3,232 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{liang2019analyzing,
-  title={Analyzing the Gap Between Ride-hailing Location and Pick-up Location with Geographical Contexts},
-  author={Liang, Yunlei and Gao, Song and Li, Mingxiao and Kang, Yuhao and Rao, Jinmeng},
-  year={2019}
+@misc{mai2023ssif,
+      abbr={ARXIV},
+      bibtex_show={true},
+      abstract={Existing digital sensors capture images at fixed spatial and spectral resolutions (e.g., RGB, multispectral, and hyperspectral images), and each combination requires bespoke machine learning models. Neural Implicit Functions partially overcome the spatial resolution challenge by representing an image in a resolution-independent way. However, they still operate at fixed, pre-defined spectral resolutions. To address this challenge, we propose Spatial-Spectral Implicit Function (SSIF), a neural implicit model that represents an image as a function of both continuous pixel coordinates in the spatial domain and continuous wavelengths in the spectral domain. We empirically demonstrate the effectiveness of SSIF on two challenging spatio-spectral super-resolution benchmarks. We observe that SSIF consistently outperforms state-of-the-art baselines even when the baselines are allowed to train separate models at each spectral resolution. We show that SSIF generalizes well to both unseen spatial resolutions and spectral resolutions. Moreover, SSIF can generate high-resolution images that improve the performance of downstream tasks (e.g., land use classification) by 1.7\%-7\%.},
+      title={SSIF: Learning Continuous Image Representation for Spatial-Spectral Super-Resolution}, 
+      author={Gengchen Mai and Ni Lao and Weiwei Sun and Yuchi Ma and Jiaming Song and Chenlin Meng and Hongxu Ma and Jinmeng Rao and Ziyuan Li and Stefano Ermon},
+      year={2023},
+      eprint={2310.00413},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      arXiv={2310.00413},
+      preview={ssif.png},
+      selected={false}
 }
 
-@article{gao2019exploring,
-  title={Exploring the effectiveness of geomasking techniques for protecting the geoprivacy of Twitter users},
-  author={Gao, Song and Rao, Jinmeng and Liu, Xinyi and Kang, Yuhao and Huang, Qunying and App, Joseph},
-  journal={Journal of Spatial Information Science},
-  number={19},
-  pages={105--129},
-  year={2019}
+@inproceedings{rao2023psgeoai,
+  abbr={ACM SIGSPATIAL},
+  bibtex_show={true},
+  abstract={In recent years we have seen substantial advances in foundation models for artificial intelligence, including language, vision, and multimodal models. Recent studies have highlighted the potential of using foundation models in geospatial artificial intelligence, known as GeoAI Foundation Models, for geographic question answering, remote sensing image understanding, map generation, and location-based services, among others. However, the development and application of GeoAI foundation models can pose serious privacy and security risks, which have not been fully discussed or addressed to date. This paper introduces the potential privacy and security risks throughout the lifecycle of GeoAI foundation models and proposes a comprehensive blueprint for research directions and preventative and control strategies. Through this vision paper, we hope to draw the attention of researchers and policymakers in geospatial domains to these privacy and security risks inherent in GeoAI foundation models and advocate for the development of privacy-preserving and secure GeoAI foundation models.},
+  title={Building Privacy-Preserving and Secure Geospatial Artificial Intelligence Foundation Models},
+  author={Rao, Jinmeng and Gao, Song and Mai, Gengchen and Janowicz, Krzysztof},
+  booktitle={Proceedings of the 31st International Conference on Advances in Geographic Information Systems},
+  pages={1--4},
+  year={2023},
+  arXiv={2309.17319},
+  preview={psgeoai.png},
+  selected={true}
 }
 
-@article{rao2017mobile,
-  title={A mobile outdoor augmented reality method combining deep learning object detection and spatial relationships for geovisualization},
-  author={Rao, Jinmeng and Qiao, Yanjun and Ren, Fu and Wang, Junxing and Du, Qingyun},
-  journal={Sensors},
-  volume={17},
-  number={9},
-  pages={1951},
-  year={2017},
-  publisher={MDPI}
+@article{rao2023cats,
+  abbr={IJGIS},
+  bibtex_show={true},
+  abstract={The prevalence of ubiquitous location-aware devices and mobile Internet enables us to collect massive individual-level trajectory dataset from users. Such trajectory big data bring new opportunities to human mobility research but also raise public concerns with regard to location privacy. In this work, we present the Conditional Adversarial Trajectory Synthesis (CATS), a deep-learning-based GeoAI methodological framework for privacy-preserving trajectory data generation and publication. CATS applies K-anonymity to the underlying spatiotemporal distributions of human movements, which provides a distributional-level strong privacy guarantee. By leveraging conditional adversarial training on K-anonymized human mobility matrices, trajectory global context learning using the attention-based mechanism, and recurrent bipartite graph matching of adjacent trajectory points, CATS is able to reconstruct trajectory topology from conditionally sampled locations and generate high-quality individual-level synthetic trajectory data, which can serve as supplements or alternatives to raw data for privacy-preserving trajectory data publication. The experiment results on over 90k GPS trajectories show that our method has a better performance in privacy preservation, spatiotemporal characteristic preservation, and downstream utility compared with baseline methods, which brings new insights into privacy-preserving human mobility research using generative AI techniques and explores data ethics issues in GIScience.},
+  title={CATS: Conditional Adversarial Trajectory Synthesis for Privacy-Preserving Trajectory Data Publication Using Deep Learning Approaches},
+  author={Rao, Jinmeng and Gao, Song and Zhu, Sijia},
+  journal={International Journal of Geographical Information Science},
+  year={2023},
+  volume={37},
+  number={12},
+  pages={1-33},
+  arXiv={2309.11587},
+  preview={cats_framework.jpg},
+  code={https://github.com/GeoDS/CATS},
+  selected={true}
+}
+
+@article{lu2023evaluation,
+  abbr={ARXIV},
+  bibtex_show={true},
+  abstract={While Multimodal Large Language Models (MLLMs) are widely used for a variety of vision-language tasks, one observation is that they sometimes misinterpret visual inputs or fail to follow textual instructions even in straightforward cases, leading to irrelevant responses, mistakes, and ungrounded claims. This observation is analogous to a phenomenon in neuropsychology known as Agnosia, an inability to correctly process sensory modalities and recognize things (e.g., objects, colors, relations). In our study, we adapt this similar concept to define "agnosia in MLLMs", and our goal is to comprehensively evaluate and mitigate such agnosia in MLLMs. Inspired by the diagnosis and treatment process in neuropsychology, we propose a novel framework EMMA (Evaluation and Mitigation of Multimodal Agnosia). In EMMA, we develop an evaluation module that automatically creates fine-grained and diverse visual question answering examples to assess the extent of agnosia in MLLMs comprehensively. We also develop a mitigation module to reduce agnosia in MLLMs through multimodal instruction tuning on fine-grained conversations. To verify the effectiveness of our framework, we evaluate and analyze agnosia in seven state-of-the-art MLLMs using 9K test samples. The results reveal that most of them exhibit agnosia across various aspects and degrees. We further develop a fine-grained instruction set and tune MLLMs to mitigate agnosia, which led to notable improvement in accuracy.},
+  title={Evaluation and Mitigation of Agnosia in Multimodal Large Language Models},
+  author={Rao*, Jinmeng and Lu*, Jiaying and Chen, Kezhen and Guo, Xiaoyuan and Zhang, Yawen and Sun, Baochen and Yang, Carl and Yang, Jie},
+  journal={arXiv preprint arXiv:2309.04041},
+  year={2023},
+  arXiv={2309.04041},
+  preview={emma.png},
+  selected={true}
+}
+
+@article{tu2023interactive,
+  abbr={IEEE CG&A},
+  bibtex_show={true},
+  abstract={The Internet of Food (IoF) is an emerging field in smart foodsheds, involving the creation of a knowledge graph (KG) about the environment, agriculture, food, diet, and health. However, the heterogeneity and size of the KG present challenges for downstream tasks, such as information retrieval and interactive exploration. To address those challenges, we propose an interactive knowledge and learning environment (IKLE) that integrates three programming and modeling languages to support multiple downstream tasks in the analysis pipeline. To make IKLE easier to use, we have developed algorithms to automate the generation of each language. In addition, we collaborated with domain experts to design and develop a dataflow visualization system, which embeds the automatic language generations into components and allows users to build their analysis pipeline by dragging and connecting components of interest. We have demonstrated the effectiveness of IKLE through three real-world case studies in smart foodsheds.},
+  title={An Interactive Knowledge and Learning Environment in Smart Foodsheds},
+  author={Tu, Yamei and Wang, Xiaoqi and Qiu, Rui and Shen, Han-Wei and Miller, Michelle and Rao, Jinmeng and Gao, Song and Huber, Patrick R and Hollander, Allan D and Lange, Matthew and others},
+  journal={IEEE Computer Graphics and Applications},
+  year={2023},
+  publisher={IEEE},
+  html={https://ieeexplore.ieee.org/document/10091124},
+  preview={ikle.png},
+  selected={false}
+}
+
+@article{guo2023lowa,
+  abbr={ARXIV},
+  bibtex_show={true},
+  abstract={We present LOWA, a novel method for localizing objects with attributes effectively in the wild. It aims to address the insufficiency of current open-vocabulary object detectors, which are limited by the lack of instance-level attribute classification and rare class names. To train LOWA, we propose a hybrid vision-language training strategy to learn object detection and recognition with class names as well as attribute information. With LOWA, users can not only detect objects with class names, but also able to localize objects by attributes. LOWA is built on top of a two-tower vision-language architecture and consists of a standard vision transformer as the image encoder and a similar transformer as the text encoder. To learn the alignment between visual and text inputs at the instance level, we train LOWA with three training steps: object-level training, attribute-aware learning, and free-text joint training of objects and attributes. This hybrid training strategy first ensures correct object detection, then incorporates instance-level attribute information, and finally balances the object class and attribute sensitivity. We evaluate our model performance of attribute classification and attribute localization on the Open-Vocabulary Attribute Detection (OVAD) benchmark and the Visual Attributes in the Wild (VAW) dataset, and experiments indicate strong zero-shot performance. Ablation studies additionally demonstrate the effectiveness of each training step of our approach.},
+  title={LOWA: Localize Objects in the Wild with Attributes},
+  author={Guo, Xiaoyuan and Chen, Kezhen and Rao, Jinmeng and Zhang, Yawen and Sun, Baochen and Yang, Jie},
+  journal={arXiv preprint arXiv:2305.20047},
+  year={2023},
+  arXiv={2305.20047},
+  preview={lowa.png},
+  selected={false}
+}
+
+@inproceedings{liuhere,
+  abbr={PLATIAL},
+  bibtex_show={true},
+  abstract={While the paths humans take play out in social as well as physical space, measures to describe and compare their trajectories are carried out in abstract, typically Euclidean, space. When these measures are applied to trajectories of actual individuals in an application area, alterations that are inconsequential in abstract space may suddenly become problematic once overlaid with geographical reality. In this work, we present a different view on trajectory similarity by introducing a measure that utilizes logical entailment. This is an inferential perspective that considers facts as triple statements deduced from the social and environmental context, in which the travel takes place, and their practical implications. We suggest a formalization of entailment-based trajectory similarity, measured as the overlapping proportion of facts, which are spatial relation statements in our case study. With the proposed measure, we evaluate LSTM-TrajGAN, a privacy-preserving trajectory-generation model. The entailment-based model evaluation reveals potential consequences of disregarding the rich structure of geographical space (e.g., miscalculated insurance risk due to regional shifts in our toy example). Our work highlights the advantage of applying logical entailment to trajectory-similarity reasoning for location-privacy protection and beyond.},
+  title={Here is Not There: Measuring Entailment-based Trajectory Similarity for Location-Privacy Protection and Beyond},
+  author={Liu, Zilong and Janowicz, Krzysztof and Currier, Kitty and Shi, Meilin and Rao, Jinmeng and Gao, Song and Cai, Ling and Graser, Anita},
+  booktitle={International Symposium on Platial Information Science},
+  year={2023},
+  html={https://zenodo.org/record/8286277},
+  preview={platial.png},
+  selected={false}
+}
+
+@article{yang2023tackling,
+  abbr={ARXIV},
+  bibtex_show={true},
+  abstract={Visual language tasks require AI models to comprehend and reason with both visual and textual content. Driven by the power of Large Language Models (LLMs), two prominent methods have emerged: (1) the hybrid integration between LLMs and Vision-Language Models (VLMs), where visual inputs are firstly converted into language descriptions by VLMs, serving as inputs for LLMs to generate final answer(s); (2) visual feature alignment in language space, where visual inputs are encoded as embeddings and projected to LLMs' language space via further supervised fine-tuning. The first approach provides light training costs and interpretability but is hard to be optimized in an end-to-end fashion. The second approach presents decent performance, but feature alignment usually requires large amounts of training data and lacks interpretability. To tackle this dilemma, we propose a novel approach, Inner Monologue Multi-Modal Optimization (IMMO), to solve complex vision language problems by simulating inner monologue processes, a cognitive process in which an individual engages in silent verbal communication with themselves. We enable LLMs and VLMs to interact through natural language conversation and propose to use a two-stage training process to learn how to do the inner monologue (self-asking questions and answering questions). IMMO is evaluated on two popular tasks and the results suggest by emulating the cognitive phenomenon of internal dialogue, our approach can enhance reasoning and explanation abilities, contributing to the more effective fusion of vision and language models. More importantly, instead of using predefined human-crafted monologues, IMMO learns this process within the deep learning models, promising wider applicability to many different AI problems beyond vision language tasks.},
+  title={Tackling Vision Language Tasks Through Learning Inner Monologues},
+  author={Yang, Diji and Chen, Kezhen and Rao, Jinmeng and Guo, Xiaoyuan and Zhang, Yawen and Yang, Jie and Zhang, Yi},
+  journal={arXiv preprint arXiv:2308.09970},
+  year={2023},
+  arXiv={2308.09970},
+  preview={immo.png},
+  selected={true}
+}
+
+
+@article{wang2023choosing,
+  abbr={TGIS},
+  bibtex_show={true},
+  abstract={With the increasing demands for geospatial analytics in industry and academia, the need for Geographic Information Systems/Science (GIS) education is on the rise. A growing number of departments in geography have launched or expanded their GIS graduate programs. However, the factors influencing students choosing GIS programs have not been examined yet. In this study, we looked at Chinese students applying for overseas GIS programs and examined factors influencing their decision-making. We distributed the survey in GISphere, one of the largest GIS international student communities, and 84 valid questionnaires were returned. We analyzed the spatial and demographic patterns of Chinese students applying for overseas GIS programs. We identify five main factors that affect their choices of GIS programs: (1) education quality and awareness, (2) physical, social, and political environments, (3) improved employment prospects, (4) personal recommendations, and (5) the application process. Our study offers implications for the development of GIS graduate programs. We anticipate that the conclusions drawn from this research will benefit and advance geography and GIS education globally.},
+  title={Choosing GIS graduate programs from afar: Chinese students' perspectives},
+  author={Wang, Yikang and Kang, Yuhao and Liu, Haokun and Hou, Ce and Zhou, Bing and Ye, Shan and Liu, Yuyan and Rao, Jinmeng and Pei, Zhenghao and Ye, Xiang and others},
+  journal={Transactions in GIS},
+  volume={27},
+  number={2},
+  pages={450--475},
+  year={2023},
+  html={https://onlinelibrary.wiley.com/doi/full/10.1111/tgis.13037},
+  preview={tgis_edu.jpg},
+  selected={false}
+}
+
+@inproceedings{rao2022measuring,
+  abbr={ACM SIGSPATIAL GEOKG},
+  bibtex_show={true},
+  abstract={Quantifying the resilience in the food system is important for food security issues. In this work, we present a geospatial knowledge graph (GeoKG)-based method for measuring the resilience of a multi-commodity flow network. Specifically, we develop a CFS-GeoKG ontology to describe geospatial semantics of a multi-commodity flow network comprehensively, and design resilience metrics that measure the node-level and network-level dependence of single-sourcing, distant, or non-adjacent suppliers/customers in food supply chains. We conduct a case study of the US state-level agricultural multi-commodity flow network with hierarchical commodity types. The results indicate that, by leveraging GeoKG, our method supports measuring both node-level and network-level resilience across space and over time and also helps discover concentration patterns of agricultural resources in the spatial network at different geographic scales.},
+  title={Measuring network resilience via geospatial knowledge graph: a case study of the us multi-commodity flow network},
+  author={Rao, Jinmeng and Gao, Song and Miller, Michelle and Morales, Alfonso},
+  booktitle={Proceedings of the 1st ACM SIGSPATIAL International Workshop on Geospatial Knowledge Graphs},
+  pages={17--25},
+  year={2022},
+  html={https://dl.acm.org/doi/abs/10.1145/3557990.3567569},
+  code={https://github.com/PhanTask/knowledgegraph},
+  preview={geokg.png},
+  selected={true}
+}
+
+@article{kang2022sticc,
+  abbr={IJGIS},
+  bibtex_show={true},
+  abstract={Spatial clustering has been widely used for spatial data mining and knowledge discovery. An ideal multivariate spatial clustering should consider both spatial contiguity and aspatial attributes. Existing spatial clustering approaches may face challenges for discovering repeated geographic patterns with spatial contiguity maintained. In this paper, we propose a Spatial Toeplitz Inverse Covariance-Based Clustering (STICC) method that considers both attributes and spatial relationships of geographic objects for multivariate spatial clustering. A subregion is created for each geographic object serving as the basic unit when performing clustering. A Markov random field is then constructed to characterize the attribute dependencies of subregions. Using a spatial consistency strategy, nearby objects are encouraged to belong to the same cluster. To test the performance of the proposed STICC algorithm, we apply it in two use cases. The comparison results with several baseline methods show that the STICC outperforms others significantly in terms of adjusted rand index and macro-F1 score. Join count statistics is also calculated and shows that the spatial contiguity is well preserved by STICC. Such a spatial clustering method may benefit various applications in the fields of geography, remote sensing, transportation, and urban planning, etc.},
+  title={STICC: a multivariate spatial clustering method for repeated geographic pattern discovery with consideration of spatial contiguity},
+  author={Kang, Yuhao and Wu, Kunlin and Gao, Song and Ng, Ignavier and Rao, Jinmeng and Ye, Shan and Zhang, Fan and Fei, Teng},
+  journal={International Journal of Geographical Information Science},
+  volume={36},
+  number={8},
+  pages={1518--1549},
+  year={2022},
+  publisher={Taylor \& Francis},
+  html={https://www.tandfonline.com/doi/abs/10.1080/13658816.2022.2053980},
+  code={https://github.com/GeoDS/STICC},
+  preview={sticc.png},
+  selected={false}
+}
+
+@inproceedings{peng2021spatiotemporal,
+  abbr={IEEE IGARSS},
+  bibtex_show={true},
+  abstract={Automatic building damage assessment after natural disasters is important for emergency response. While existing supervised deep learning models achieved good performance on building damage classification, these models require massive human labels for training. Additionally, pre-trained models often fail to generalize well to new disaster events due to gaps between domains associated with training and testing data. In response, this study proposes a novel spatiotemporal contrastive representation learning model for learning features of building damages with big unlabeled data. Experimental results demonstrate superior performance of such features on classifying building damages resulting from various natural disasters (e.g., hurricanes, floods, wildfires, earthquakes, etc.) across different geographic locations worldwide, compared with the state-of-the-art supervised methods.},
+  title={Spatiotemporal contrastive representation learning for building damage classification},
+  author={Peng, Bo and Huang, Qunying and Rao, Jinmeng},
+  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
+  pages={8562--8565},
+  year={2021},
+  organization={IEEE},
+  html={https://ieeexplore.ieee.org/document/9554302},
+  preview={stcl.png},
+  selected={false}
+}
+
+@inproceedings{rao2021vtsv,
+  abbr={ACM SIGSPATIAL GEOAI},
+  bibtex_show={true},
+  abstract={Trajectory data is among the most sensitive data and the society increasingly raises privacy concerns. In this demo paper, we present a privacy-preserving Vehicle Trajectory Simulation and Visualization (VTSV) web platform (demo video: https://youtu.be/NY5L4bu2kTU), which automatically generates navigation routes between given pairs of origins and destinations and employs a deep reinforcement learning model to simulate vehicle trajectories with customized driving behaviors such as normal driving, overspeed, aggressive acceleration, and aggressive turning. The simulated vehicle trajectory data contain high-sample-rate of attributes including GPS location, speed, acceleration, and steering angle, and such data are visualized in VTSV using streetscape.gl, an autonomous driving data visualization framework. Location privacy protection methods such as origin-destination geomasking and trajectory k-anonymity are integrated into the platform to support privacy-preserving trajectory data generation and publication. We design two application scenarios to demonstrate how VTSV performs location privacy protection and customize driving behavior, respectively. The demonstration shows that VTSV is able to mitigate data privacy, sparsity, and imbalance sampling issues, which offers new insights into driving trajectory simulation and GeoAI-powered privacy-preserving data publication.},
+  title={VTSV: A privacy-preserving vehicle trajectory simulation and visualization platform using deep reinforcement learning},
+  author={Rao, Jinmeng and Gao, Song and Zhu, Xiaojin},
+  booktitle={Proceedings of the 4th ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery},
+  pages={43--46},
+  year={2021},
+  html={https://dl.acm.org/doi/10.1145/3486635.3491073},
+  preview={vtsv.gif},
+  selected={true}
+}
+
+@article{rao2021privacy,
+  abbr={TGIS},
+  bibtex_show={true},
+  abstract={The nowadays ubiquitous location-aware mobile devices have contributed to the rapid growth of individual-level location data. Such data are usually collected by location-based service platforms as training data to improve their predictive models' performance, but the collection of such data may raise public concerns about privacy issues. In this study, we introduce a privacy-preserving location recommendation framework based on a decentralized collaborative machine learning approach: federated learning. Compared with traditional centralized learning frameworks, we keep users' data on their own devices and train the model locally so that their data remain private. The local model parameters are aggregated and updated through secure multiple-party computation to achieve collaborative learning among users while preserving privacy. Our framework also integrates information about transportation infrastructure, place safety, and flow-based spatial interaction to further improve recommendation accuracy. We further design two attack cases to examine the privacy protection effectiveness and robustness of the framework. The results show that our framework achieves a better balance on the privacy–utility trade-off compared with traditional centralized learning methods. The results and ensuing discussion offer new insights into privacy-preserving geospatial artificial intelligence and promote geoprivacy in location-based services.},
+  title={A privacy-preserving framework for location recommendation using decentralized collaborative machine learning},
+  author={Rao, Jinmeng and Gao, Song and Li, Mingxiao and Huang, Qunying},
+  journal={Transactions in GIS},
+  year={2021},
+  html={https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.12769},
+  code={https://github.com/GeoDS/FL-LocRec},
+  preview={fllocrec.jpg},
+  selected={true}
+}
+
+@inproceedings{rao2020lstm,
+  abbr={GISCIENCE},
+  bibtex_show={true},
+  abstract={The prevalence of location-based services contributes to the explosive growth of individual-level location trajectory data and raises public concerns about privacy issues. In this research, we propose a novel LSTM-TrajGAN approach, which is an end-to-end deep learning model to generate privacy-preserving synthetic trajectory data for data sharing and publication. We design a loss metric function TrajLoss to measure the trajectory similarity losses for model training and optimization. The model is evaluated on the trajectory-user-linking task on a real-world semantic trajectory dataset. Compared with other common geomasking methods, our model can better prevent users from being re-identified, and it also preserves essential spatial, temporal, and thematic characteristics of the real trajectory data. The model better balances the effectiveness of trajectory privacy protection and the utility for spatial and temporal analyses, which offers new insights into the GeoAI-powered privacy protection for human mobility studies.},
+  title={LSTM-TrajGAN: A deep learning approach to trajectory privacy protection},
+  author={Rao, Jinmeng and Gao, Song and Kang, Yuhao and Huang, Qunying},
+  booktitle={11th International Conference on Geographic Information Science (GIScience 2021) - Part I},
+  volume={177},
+  pages={12--1},
+  year={2020},
+  organization={Schloss Dagstuhl--Leibniz-Zentrum f$\{$$\backslash$"u$\}$r Informatik},
+  html={https://drops.dagstuhl.de/opus/volltexte/2020/13047/},
+  code={https://github.com/GeoDS/LSTM-TrajGAN},
+  preview={trajgan.png},
+  selected={true}
 }
 
 @article{gao2020mapping,
+  abbr={ACM SIGSPATIAL},
+  bibtex_show={true},
+  abstract={To contain the COVID-19 epidemic, one of the non-pharmacological epidemic control measures is reducing the transmission rate of SARS-COV-2 in the population through social distancing. An interactive web-based mapping platform that provides timely quantitative information on how people in different counties and states reacted to the social distancing guidelines was developed by the GeoDS Lab @UW-Madison with the support of the National Science Foundation RAPID program. The web portal integrates geographic information systems (GIS) and daily updated human mobility statistical patterns (median travel distance and stay-at-home dwell time) derived from large-scale anonymized and aggregated smartphone location big data at the county-level in the United States, and aims to increase risk awareness of the public, support data-driven public health and governmental decision-making, and help enhance community responses to the COVID-19 pandemic.},
   title={Mapping county-level mobility pattern changes in the United States in response to COVID-19},
   author={Gao, Song and Rao, Jinmeng and Kang, Yuhao and Liang, Yunlei and Kruse, Jake},
   journal={SIGSpatial Special},
@@ -37,7 +236,26 @@
   number={1},
   pages={16--26},
   year={2020},
-  publisher={ACM New York, NY, USA}
+  publisher={ACM New York, NY, USA},
+  html={https://dl.acm.org/doi/10.1145/3404820.3404824},
+  code={https://github.com/GeoDS/mapmobility},
+  website={https://geography.wisc.edu/covid19/physical-distancing/},
+  preview={mobmap.gif},
+  selected={true}
+}
+
+@inproceedings{kang2020towards,
+  title={Towards cartographic knowledge encoding with deep learning: A case study of building generalization},
+  author={Kang, Y and Rao, J and Wang, W and Peng, B and Gao, S and Zhang, F},
+  booktitle={Proceedings of the AutoCarto},
+  year={2020}
+}
+
+@inproceedings{rao2020landmarks,
+  title={Landmarks as Beacons: Pedestrian Navigation Based on Landmark Detection and Mobile Augmented Reality},
+  author={Rao, J and Gao, S and Kang, Y and Du, Q},
+  booktitle={Proceedings of the AutoCarto},
+  year={2020}
 }
 
 @incollection{gao2021automatic,
@@ -102,12 +320,6 @@
   publisher={National Academy of Sciences}
 }
 
-@article{rao2021privacy,
-  title={A privacy-preserving framework for location recommendation using decentralized collaborative machine learning},
-  author={Rao, Jinmeng and Gao, Song and Li, Mingxiao and Huang, Qunying},
-  journal={Transactions in GIS},
-  year={2021}
-}
 
 @article{peng2021urban,
   title={Urban multiple route planning model using dynamic programming in reinforcement learning},
@@ -130,34 +342,6 @@
   publisher={Springer International Publishing}
 }
 
-@inproceedings{peng2021spatiotemporal,
-  title={Spatiotemporal contrastive representation learning for building damage classification},
-  author={Peng, Bo and Huang, Qunying and Rao, Jinmeng},
-  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
-  pages={8562--8565},
-  year={2021},
-  organization={IEEE}
-}
-
-@inproceedings{rao2021vtsv,
-  title={VTSV: A privacy-preserving vehicle trajectory simulation and visualization platform using deep reinforcement learning},
-  author={Rao, Jinmeng and Gao, Song and Zhu, Xiaojin},
-  booktitle={Proceedings of the 4th ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery},
-  pages={43--46},
-  year={2021}
-}
-
-@article{kang2022sticc,
-  title={STICC: a multivariate spatial clustering method for repeated geographic pattern discovery with consideration of spatial contiguity},
-  author={Kang, Yuhao and Wu, Kunlin and Gao, Song and Ng, Ignavier and Rao, Jinmeng and Ye, Shan and Zhang, Fan and Fei, Teng},
-  journal={International Journal of Geographical Information Science},
-  volume={36},
-  number={8},
-  pages={1518--1549},
-  year={2022},
-  publisher={Taylor \& Francis}
-}
-
 @article{杜田2020基于,
   title={基于 Python 的多源地理数据高效质检系统},
   author={杜田 and 许大璐 and 朱校娟 and 饶锦蒙 and 杜清运},
@@ -175,86 +359,28 @@
   year={2017}
 }
 
-@inproceedings{rao2022measuring,
-  title={Measuring network resilience via geospatial knowledge graph: a case study of the us multi-commodity flow network},
-  author={Rao, Jinmeng and Gao, Song and Miller, Michelle and Morales, Alfonso},
-  booktitle={Proceedings of the 1st ACM SIGSPATIAL International Workshop on Geospatial Knowledge Graphs},
-  pages={17--25},
-  year={2022}
+@article{liang2019analyzing,
+  title={Analyzing the Gap Between Ride-hailing Location and Pick-up Location with Geographical Contexts},
+  author={Liang, Yunlei and Gao, Song and Li, Mingxiao and Kang, Yuhao and Rao, Jinmeng},
+  year={2019}
 }
 
-@article{wang2023choosing,
-  title={Choosing GIS graduate programs from afar: Chinese students' perspectives},
-  author={Wang, Yikang and Kang, Yuhao and Liu, Haokun and Hou, Ce and Zhou, Bing and Ye, Shan and Liu, Yuyan and Rao, Jinmeng and Pei, Zhenghao and Ye, Xiang and others},
-  journal={Transactions in GIS},
-  volume={27},
-  number={2},
-  pages={450--475},
-  year={2023}
+@article{gao2019exploring,
+  title={Exploring the effectiveness of geomasking techniques for protecting the geoprivacy of Twitter users},
+  author={Gao, Song and Rao, Jinmeng and Liu, Xinyi and Kang, Yuhao and Huang, Qunying and App, Joseph},
+  journal={Journal of Spatial Information Science},
+  number={19},
+  pages={105--129},
+  year={2019}
 }
 
-@inproceedings{rao2020lstm,
-  title={LSTM-TrajGAN: A deep learning approach to trajectory privacy protection},
-  author={Rao, Jinmeng and Gao, Song and Kang, Yuhao and Huang, Qunying},
-  booktitle={11th International Conference on Geographic Information Science (GIScience 2021) - Part I},
-  volume={177},
-  pages={12--1},
-  year={2020},
-  organization={Schloss Dagstuhl--Leibniz-Zentrum f$\{$$\backslash$"u$\}$r Informatik}
-}
-
-@inproceedings{kang2020towards,
-  title={Towards cartographic knowledge encoding with deep learning: A case study of building generalization},
-  author={Kang, Y and Rao, J and Wang, W and Peng, B and Gao, S and Zhang, F},
-  booktitle={Proceedings of the AutoCarto},
-  year={2020}
-}
-
-@inproceedings{rao2020landmarks,
-  title={Landmarks as Beacons: Pedestrian Navigation Based on Landmark Detection and Mobile Augmented Reality},
-  author={Rao, J and Gao, S and Kang, Y and Du, Q},
-  booktitle={Proceedings of the AutoCarto},
-  year={2020}
-}
-
-@article{tu2023interactive,
-  title={An Interactive Knowledge and Learning Environment in Smart Foodsheds},
-  author={Tu, Yamei and Wang, Xiaoqi and Qiu, Rui and Shen, Han-Wei and Miller, Michelle and Rao, Jinmeng and Gao, Song and Huber, Patrick R and Hollander, Allan D and Lange, Matthew and others},
-  journal={IEEE Computer Graphics and Applications},
-  year={2023},
-  publisher={IEEE}
-}
-
-@article{guo2023lowa,
-  title={LOWA: Localize Objects in the Wild with Attributes},
-  author={Guo, Xiaoyuan and Chen, Kezhen and Rao, Jinmeng and Zhang, Yawen and Sun, Baochen and Yang, Jie},
-  journal={arXiv preprint arXiv:2305.20047},
-  year={2023}
-}
-
-@article{liuhere,
-  title={Here is Not There: Measuring Entailment-based Trajectory Similarity for Location-Privacy Protection and Beyond},
-  author={Liu, Zilong and Janowicz, Krzysztof and Currier, Kitty and Shi, Meilin and Rao, Jinmeng and Gao, Song and Cai, Ling and Graser, Anita},
-  year={2023}
-}
-
-@article{yang2023tackling,
-  title={Tackling Vision Language Tasks Through Learning Inner Monologues},
-  author={Yang, Diji and Chen, Kezhen and Rao, Jinmeng and Guo, Xiaoyuan and Zhang, Yawen and Yang, Jie and Zhang, Yi},
-  journal={arXiv preprint arXiv:2308.09970},
-  year={2023}
-}
-
-@article{lu2023evaluation,
-  title={Evaluation and Mitigation of Agnosia in Multimodal Large Language Models},
-  author={Lu, Jiaying and Rao, Jinmeng and Chen, Kezhen and Guo, Xiaoyuan and Zhang, Yawen and Sun, Baochen and Yang, Carl and Yang, Jie},
-  journal={arXiv preprint arXiv:2309.04041},
-  year={2023}
-}
-
-@article{rao2023cats,
-  title={CATS: Conditional Adversarial Trajectory Synthesis for Privacy-Preserving Trajectory Data Publication Using Deep Learning Approaches},
-  author={Rao, Jinmeng and Gao, Song and Zhu, Sijia},
-  journal={arXiv preprint arXiv:2309.11587},
-  year={2023}
+@article{rao2017mobile,
+  title={A mobile outdoor augmented reality method combining deep learning object detection and spatial relationships for geovisualization},
+  author={Rao, Jinmeng and Qiao, Yanjun and Ren, Fu and Wang, Junxing and Du, Qingyun},
+  journal={Sensors},
+  volume={17},
+  number={9},
+  pages={1951},
+  year={2017},
+  publisher={MDPI}
 }

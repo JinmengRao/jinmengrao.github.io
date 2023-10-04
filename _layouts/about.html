@@ -8,7 +8,7 @@ layout: default
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <p class="desc"><span style="color: inherit;font-size:16pt;">{% include social.html %}</span> | {{ page.subtitle }}</p>
         </header>
 
         <article>
@@ -43,7 +43,7 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><span style="color: inherit;">news</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/news/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include news.html limit=true %}
           {%- endif %}
 
@@ -55,23 +55,22 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><span style="color: inherit;">selected publications</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/publications/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
+          <!-- Services -->
+          {% if page.services -%}
+            <h2><span style="color: inherit;">services</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/services/' | relative_url }}"> [ more... ] </a></span></h2>
+            {%- include services.html full=false %}
           {%- endif %}
+
+          <!-- Awards -->
+          {% if page.awards -%}
+            <h2><span style="color: inherit;">awards</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/awards/' | relative_url }}"> [ more... ] </a></span></h2>
+            {%- include awards.html limit=true %}
+          {%- endif %}
+
         </article>
 
 </div>
