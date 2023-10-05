@@ -6,4 +6,4 @@ type: program
 related_posts: false
 ---
 
-**PC Member**, NeurIPS Workshop on Socially Responsible Language Modelling Research (SoLaR)
+**PC Member**, NeurIPS 2023 Workshop on Socially Responsible Language Modelling Research (SoLaR)

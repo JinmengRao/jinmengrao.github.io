@@ -21,28 +21,34 @@
               </table>
             </div>
 
-            {% if include.full -%}
-
-            <!-- Academic Appointments -->
+            <!-- Reviewers -->
             <div class="table-responsive" style="max-height: 60vw">
-              <p><span  class="desc" style="font-size:14pt;">Academic Appointments</span></p>
-              {%- assign services = site.services | reverse -%}
-              <table class="table table-sm table-borderless" cellspacing="0">
-              {% for item in services%}
-                {% if item.type contains 'academic' %}
-                <tr>
-                  <th scope="row">{{ item.start_date | date: "%Y" }} - {{ item.date | date: "%Y" }}</th>
-                  <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
-                  </td>
-                </tr>
-                {% endif %}
-              {%- endfor %}
-              </table>
+              <p><span  class="desc" style="font-size:14pt;">Reviewers</span></p>
+              <ul>
+                <li>ACM Transactions on Spatial Algorithms and Systems</li>
+                <li>Annals of GIS</li>
+                <li>Applied Computing and Geosciences</li>
+                <li>Applied Sciences</li>
+                <li>BMC Public Health</li>
+                <li>Computers & Geosciences</li>
+                <li>Data & Policy</li>
+                <li>Earth Science Informatics</li>
+                <li>Habitat International</li>
+                <li>International Conference on Geoinformatics</li>
+                <li>International Journal of Data Science and Analytics</li>
+                <li>International Journal of Geographical Information Science</li>
+                <li>International Journal of Health Geographics</li>
+                <li>ISPRS International Journal of Geo-Information</li>
+                <li>Journal of Computational Social Science</li>
+                <li>Journal of Geovisualization and Spatial Analysis</li>
+                <li>Journal of Maps</li>
+                <li>Land Use Policy</li>
+                <li>Conference on Neural Information Processing Systems (NeurIPS) Workshop</li>
+                <li>Scientific Reports</li>
+                <li>Spatial and Spatio-temporal Epidemiology</li>
+                <li>Stochastic Environmental Research and Risk Assessment</li>
+                <li>Transactions in GIS</li>
+              </ul>
             </div>
 
             <!-- Professional Appointments -->
@@ -67,35 +73,30 @@
               </table>
             </div>
 
-            <!-- Reviewers -->
+            {% if include.full -%}
+
+            <!-- Academic Appointments -->
             <div class="table-responsive" style="max-height: 60vw">
-              <p><span  class="desc" style="font-size:14pt;">Reviewers</span></p>
-              <ul>
-                <li>ACM Transactions on Spatial Algorithms and Systems</li>
-                <li>Annals of GIS</li>
-                <li>Applied Computing and Geosciences</li>
-                <li>Applied Sciences</li>
-                <li>BMC Public Health</li>
-                <li>Computers & Geosciences</li>
-                <li>Data & Policy</li>
-                <li>Earth Science Informatics</li>
-                <li>Habitat International</li>
-                <li>International Conference on Geoinformatics</li>
-                <li>International Journal of Data Science and Analytics</li>
-                <li>International Journal of Geographical Information Science</li>
-                <li>International Journal of Health Geographics</li>
-                <li>ISPRS International Journal of Geo-Information</li>
-                <li>Journal of Computational Social Science</li>
-                <li>Journal of Geovisualization and Spatial Analysis</li>
-                <li>Journal of Maps</li>
-                <li>Land Use Policy</li>
-                <li>Scientific Reports</li>
-                <li>Spatial and Spatio-temporal Epidemiology</li>
-                <li>Stochastic Environmental Research and Risk Assessment</li>
-                <li>Transactions in GIS</li>
-              </ul>
+              <p><span  class="desc" style="font-size:14pt;">Academic Appointments</span></p>
+              {%- assign services = site.services | reverse -%}
+              <table class="table table-sm table-borderless" cellspacing="0">
+              {% for item in services%}
+                {% if item.type contains 'academic' %}
+                <tr>
+                  <th scope="row">{{ item.start_date | date: "%Y" }} - {{ item.date | date: "%Y" }}</th>
+                  <td>
+                    {% if item.inline -%}
+                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                    {%- else -%}
+                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {%- endif %}
+                  </td>
+                </tr>
+                {% endif %}
+              {%- endfor %}
+              </table>
             </div>
-            
+
             <!-- Volunteers -->
             <div class="table-responsive" style="max-height: 60vw">
               <p><span  class="desc" style="font-size:14pt;">Volunteers</span></p>
