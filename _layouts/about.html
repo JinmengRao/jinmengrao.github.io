@@ -26,6 +26,7 @@ layout: default
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
+              max-width=300px
               alt=page.profile.image
               cache_bust=true -%}
             {% endif -%}
@@ -43,32 +44,44 @@ layout: default
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><span style="color: inherit;">recent news</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/news/' | relative_url }}"> [ more... ] </a></span></h2>
+            <h2><span style="color: inherit;">Recent News</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/news/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include news.html limit=true %}
+            <br/>
           {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest Posts</a></h2>
             {%- include latest_posts.html %}
+            <br/>
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><span style="color: inherit;">selected publications</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/publications/' | relative_url }}"> [ more... ] </a></span></h2>
+            <h2><span style="color: inherit;">Selected Publications</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/publications/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include selected_papers.html %}
+            <br/>
+          {%- endif %}
+
+          <!-- Talks -->
+          {% if page.talks -%}
+            <h2><span style="color: inherit;">Invited Talks</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/talks/' | relative_url }}"> [ more... ] </a></span></h2>
+            {%- include talks.html limit=true %}
+            <br/>
           {%- endif %}
 
           <!-- Services -->
           {% if page.services -%}
-            <h2><span style="color: inherit;">recent services</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/services/' | relative_url }}"> [ more... ] </a></span></h2>
+            <h2><span style="color: inherit;">Recent Services</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/services/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include services.html full=false %}
+            <br/>
           {%- endif %}
 
           <!-- Awards -->
           {% if page.awards -%}
-            <h2><span style="color: inherit;">recent awards</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/awards/' | relative_url }}"> [ more... ] </a></span></h2>
+            <h2><span style="color: inherit;">Recent Awards</span>&nbsp;<span class="desc" style="font-size:12pt;"><a href="{{ '/awards/' | relative_url }}"> [ more... ] </a></span></h2>
             {%- include awards.html limit=true %}
+            <br/>
           {%- endif %}
 
         </article>

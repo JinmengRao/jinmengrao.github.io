@@ -3,7 +3,7 @@
 
 @string{aps = {American Physical Society,}}
 
-@misc{mai2023ssif,
+@article{mai2023ssif,
       abbr={ARXIV},
       bibtex_show={true},
       abstract={Existing digital sensors capture images at fixed spatial and spectral resolutions (e.g., RGB, multispectral, and hyperspectral images), and each combination requires bespoke machine learning models. Neural Implicit Functions partially overcome the spatial resolution challenge by representing an image in a resolution-independent way. However, they still operate at fixed, pre-defined spectral resolutions. To address this challenge, we propose Spatial-Spectral Implicit Function (SSIF), a neural implicit model that represents an image as a function of both continuous pixel coordinates in the spatial domain and continuous wavelengths in the spectral domain. We empirically demonstrate the effectiveness of SSIF on two challenging spatio-spectral super-resolution benchmarks. We observe that SSIF consistently outperforms state-of-the-art baselines even when the baselines are allowed to train separate models at each spectral resolution. We show that SSIF generalizes well to both unseen spatial resolutions and spectral resolutions. Moreover, SSIF can generate high-resolution images that improve the performance of downstream tasks (e.g., land use classification) by 1.7\%-7\%.},
@@ -11,6 +11,7 @@
       author={Gengchen Mai and Ni Lao and Weiwei Sun and Yuchi Ma and Jiaming Song and Chenlin Meng and Hongxu Ma and Jinmeng Rao and Ziyuan Li and Stefano Ermon},
       year={2023},
       eprint={2310.00413},
+      journal={arXiv preprint arXiv:2310.00413},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       arXiv={2310.00413},
@@ -29,6 +30,7 @@
   year={2023},
   arXiv={2309.17319},
   preview={psgeoai.png},
+  note={Highlight: Top conference in Geographic Information Science. Acceptance rate 37.2\%},
   selected={true}
 }
 
@@ -46,6 +48,7 @@
   arXiv={2309.11587},
   preview={cats_framework.jpg},
   code={https://github.com/GeoDS/CATS},
+  note={Highlight: Top journal in Geographic Information Science. SCI Q1 in CS, IS and Geography},
   selected={true}
 }
 
@@ -59,6 +62,7 @@
   year={2023},
   arXiv={2309.04041},
   preview={emma.png},
+  note={Highlight: Factual and trustworthy multimodal foundation models},
   selected={true}
 }
 
@@ -112,6 +116,7 @@
   year={2023},
   arXiv={2308.09970},
   preview={immo.png},
+  note={Highlight: Inner monologue among agents via reinforcement learning. To be presented at BayLearn 2023},
   selected={true}
 }
 
@@ -144,6 +149,7 @@
   html={https://dl.acm.org/doi/abs/10.1145/3557990.3567569},
   code={https://github.com/PhanTask/knowledgegraph},
   preview={geokg.png},
+  note={Highlight: Food system and food security via geospatial knowledge graphs.},
   selected={true}
 }
 
@@ -245,39 +251,64 @@
 }
 
 @inproceedings{kang2020towards,
+  abbr={AUTOCARTO},
+  bibtex_show={true},
   title={Towards cartographic knowledge encoding with deep learning: A case study of building generalization},
   author={Kang, Y and Rao, J and Wang, W and Peng, B and Gao, S and Zhang, F},
   booktitle={Proceedings of the AutoCarto},
-  year={2020}
+  year={2020},
+  html={https://cartogis.org/docs/autocarto/2020/docs/abstracts/2b\%20Towards\%20Cartographic\%20Knowledge\%20Encoding\%20with\%20Deep\%20Learning\%20A.pdf},
+  preview={autocarto_encoding.png},
+  selected={false}
 }
 
 @inproceedings{rao2020landmarks,
+  abbr={AUTOCARTO},
+  bibtex_show={true},
   title={Landmarks as Beacons: Pedestrian Navigation Based on Landmark Detection and Mobile Augmented Reality},
   author={Rao, J and Gao, S and Kang, Y and Du, Q},
   booktitle={Proceedings of the AutoCarto},
-  year={2020}
+  year={2020},
+  html={https://cartogis.org/docs/autocarto/2020/docs/abstracts/4i\%20Landmarks\%20as\%20Beacons\%20Pedestrian\%20Navigation\%20Based\%20on\%20Landmark\%20Detection\%20and\%20Mobile\%20Augmented\%20Reality.pdf},
+  preview={autocarto_ar.png},
+  selected={false}
 }
 
 @incollection{gao2021automatic,
+  abbr={BOOK CHAPTER},
+  bibtex_show={true},
+  abstract={Urban road networks are fundamental transportation infrastructures in daily life and essential in digital maps to support vehicle routing and navigation. Traditional methods of map vector data generation based on surveyor’s field work and map digitalization are costly and have a long update period. In the Big Data age, large-scale GPS-enabled taxi trajectories and high-volume ride-sharing datasets are increasingly available. These datasets provide high-resolution spatiotemporal information about urban traffic along road networks. In this study, we present a novel geospatial-big-data-driven framework that includes trajectory compression, clustering, and vectorization to automatically generate urban road geometric information. A case study is conducted using a large-scale DiDi ride-sharing GPS dataset in the city of Chengdu in China. We compare the results of our automatic extraction method with the road layer downloaded from OpenStreetMap. We measure the quality and demonstrate the effectiveness of our road extraction method regarding accuracy, spatial coverage and connectivity. The proposed framework shows a good potential to update fundamental road transportation information for smart-city development and intelligent transportation management using geospatial big data.},
   title={Automatic urban road network extraction from massive GPS trajectories of taxis},
   author={Gao, Song and Li, Mingxiao and Rao, Jinmeng and Mai, Gengchen and Prestby, Timothy and Marks, Joseph and Hu, Yingjie},
   booktitle={Handbook of Big Geospatial Data},
   pages={261--283},
   year={2021},
-  publisher={Springer International Publishing Cham}
+  publisher={Springer International Publishing Cham},
+  html={https://link.springer.com/chapter/10.1007/978-3-030-55462-0_11},
+  preview={book_road_ext.png},
+  selected={false}
 }
 
 @article{kang2021understanding,
+  abbr={LUP},
+  bibtex_show={true},
+  abstract={Understanding house price appreciation benefits place-based decision makings and real estate market analyses. Although large amounts of interests have been paid in the house price modeling, limited work has focused on evaluating the price appreciation rate. In this study, we propose a data-fusion framework to examine how well house price appreciation potentials can be predicted by combining multiple data sources. We used data sets including house structural attributes, house photos, locational amenities, street view images, transportation accessibility, visitor patterns, and socioeconomic attributes of neighborhoods to enrich our understanding of the real estate appreciation and its predictive modeling. As a case study, we investigate more than 20,000 houses in the Greater Boston Area, and discuss the spatial dependency of house price appreciations, influential variables and their relationships. In detail, we extract deep features from street view images and house photos using a deep learning model, merging features from multi-source data and modeling house price appreciation using machine learning models and the geographically weighted regression at two spatial scales: fine-scale point level and aggregated neighborhood level. Results show that the house price appreciation rate can be modeled with high accuracy using the proposed framework (R2 = 0.74 for gradient boosting machine at neighborhood-scale). We discovered that houses with low house prices and small house areas may have a higher house appreciation potential. Our results provide insights into how multi-source big geo-data can be employed in machine learning frameworks to characterize real estate price trends and help understand human settlements for policy-making.},
   title={Understanding house price appreciation using multi-source big geo-data and machine learning},
   author={Kang, Yuhao and Zhang, Fan and Peng, Wenzhe and Gao, Song and Rao, Jinmeng and Duarte, Fabio and Ratti, Carlo},
   journal={Land Use Policy},
   volume={111},
   pages={104919},
   year={2021},
-  publisher={Pergamon}
+  publisher={Pergamon},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0264837719316746},
+  preview={lup_housing.png},
+  selected={false}
 }
 
 @article{kang2020multiscale,
+  abbr={SCIENTIFIC DATA},
+  bibtex_show={true},
+  abstract={Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for assessing the impacts of non-pharmaceutical interventions (such as stay-at-home orders) during the COVID-19 pandemic. In this data descriptor, we introduce a regularly-updated multiscale dynamic human mobility flow dataset across the United States, with data starting from March 1st, 2020. By analysing millions of anonymous mobile phone users’ visits to various places provided by SafeGraph, the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales: census tract, county, and state. There is high correlation between our mobility flow dataset and openly available data sources, which shows the reliability of the produced data. Such a high spatiotemporal resolution human mobility flow dataset at different geographic scales over time may help monitor epidemic spreading dynamics, inform public health policy, and deepen our understanding of human behaviour changes under the unprecedented public health crisis. This up-to-date O-D flow open data can support many other social sensing and transportation applications.},
   title={Multiscale dynamic human mobility flow dataset in the US during the COVID-19 epidemic},
   author={Kang, Yuhao and Gao, Song and Liang, Yunlei and Li, Mingxiao and Rao, Jinmeng and Kruse, Jake},
   journal={Scientific data},
@@ -285,10 +316,17 @@
   number={1},
   pages={390},
   year={2020},
-  publisher={Nature Publishing Group UK London}
+  publisher={Nature Publishing Group UK London},
+  html={https://www.nature.com/articles/s41597-020-00734-5},
+  preview={sd_flows.jpeg},
+  code={https://github.com/GeoDS/COVID19USFlows},
+  selected={false}
 }
 
 @article{gao2020association,
+  abbr={JAMA},
+  bibtex_show={true},
+  abstract={Importance  A stay-at-home social distancing mandate is a key nonpharmacological measure to reduce the transmission rate of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2), but a high rate of adherence is needed. Objective  To examine the association between the rate of human mobility changes and the rate of confirmed cases of SARS-CoV-2 infection. Design, Setting, and Participants  This cross-sectional study used daily travel distance and home dwell time derived from millions of anonymous mobile phone location data from March 11 to April 10, 2020, provided by the Descartes Labs and SafeGraph to quantify the degree to which social distancing mandates were followed in the 50 US states and District of Columbia and the association of mobility changes with rates of coronavirus disease 2019 (COVID-19) cases. Exposure  State-level stay-at-home orders during the COVID-19 pandemic. Main Outcomes and Measures  The main outcome was the association of state-specific rates of COVID-19 confirmed cases with the change rates of median travel distance and median home dwell time of anonymous mobile phone users. The increase rates are measured by the exponent in curve fitting of the COVID-19 cumulative confirmed cases, while the mobility change (increase or decrease) rates were measured by the slope coefficient in curve fitting of median travel distance and median home dwell time for each state. Results  Data from more than 45 million anonymous mobile phone devices were analyzed. The correlation between the COVID-19 increase rate and travel distance decrease rate was –0.586 (95\% CI, –0.742 to –0.370) and the correlation between COVID-19 increase rate and home dwell time increase rate was 0.526 (95\% CI, 0.293 to 0.700). Increases in state-specific doubling time of total cases ranged from 1.0 to 6.9 days (median [interquartile range], 2.7 [2.3-3.3] days) before stay-at-home orders were enacted to 3.7 to 30.3 days (median [interquartile range], 6.0 [4.8-7.1] days) after stay-at-home social distancing orders were put in place, consistent with pandemic modeling results. Conclusions and Relevance  These findings suggest that stay-at-home social distancing mandates, when they were followed by measurable mobility changes, were associated with reduction in COVID-19 spread. These results come at a particularly critical period when US states are beginning to relax social distancing policies and reopen their economies. These findings support the efficacy of social distancing and could help inform future implementation of social distancing policies should they need to be reinstated during later periods of COVID-19 reemergence.},
   title={Association of mobile phone location data indications of travel and stay-at-home mandates with covid-19 infection rates in the us},
   author={Gao, Song and Rao, Jinmeng and Kang, Yuhao and Liang, Yunlei and Kruse, Jake and Dopfer, Dorte and Sethi, Ajay K and Reyes, Juan Francisco Mandujano and Yandell, Brian S and Patz, Jonathan A},
   journal={JAMA network open},
@@ -296,20 +334,32 @@
   number={9},
   pages={e2020485--e2020485},
   year={2020},
-  publisher={American Medical Association}
+  publisher={American Medical Association},
+  html={https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2770249},
+  preview={jama.png},
+  selected={false}
 }
 
 @article{wu2020assessing,
+  abbr={CEUS},
+  bibtex_show={true},
+  abstract={The neighbourhood is a basic residential unit and is characterized by its physical setting, functional attributes and visual appearance. The visual appearance of a neighbourhood can directly affect the impression of humans regarding the local living environment. Assessing the characteristics of the visual appearance of a neighbourhood is significance for promoting people's physical activities, improving residents' sense of comfort and even ensuring the equality of facilities. However, studies assessing the spatial characteristics of visual appearance are still limited. Therefore, this article applies street view images to quantify the visual appearance of neighbourhoods at multiple scales in Shenzhen, China. Then, geographically weighted principal component analysis (GWPCA) is employed to explore the varying multivariate structures of visual appearance. The results confirm that GWPCA can be effective in assessing the visual appearance characteristics of neighbourhoods while considering spatial heterogeneity. The visual appearance characteristics of neighbourhoods are sensitive to both the spatial location and analysis scale. The extracted geographically weighted principal components (GWPCs) can represent the original screen elements by emphasizing certain comprehensive concepts, such as walkability, accessibility and vibrancy. The exploratory findings of this article allow for an improvement of studies on spatial quality at the human scale and could potentially guide neighbourhood planning and street design.},
   title={Assessing multiscale visual appearance characteristics of neighbourhoods using geographically weighted principal component analysis in Shenzhen, China},
-  author={Wu, Chao and Peng, Ningyezi and Ma, Xiangyuan and Li, Sheng and Rao, Jinmeng},
+  author={Wu, Chao and Peng, Ningyezi and Ma, Xiangyuan and Li, Sheng and Rao*, Jinmeng},
   journal={Computers, Environment and Urban Systems},
   volume={84},
   pages={101547},
   year={2020},
-  publisher={Pergamon}
+  publisher={Pergamon},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0198971520302805},
+  preview={ceus.png},
+  selected={false}
 }
 
 @article{hou2021intracounty,
+  abbr={PNAS},
+  bibtex_show={true},
+  abstract={The COVID-19 pandemic is a global threat presenting health, economic, and social challenges that continue to escalate. Metapopulation epidemic modeling studies in the susceptible–exposed–infectious–removed (SEIR) style have played important roles in informing public health policy making to mitigate the spread of COVID-19. These models typically rely on a key assumption on the homogeneity of the population. This assumption certainly cannot be expected to hold true in real situations; various geographic, socioeconomic, and cultural environments affect the behaviors that drive the spread of COVID-19 in different communities. What’s more, variation of intracounty environments creates spatial heterogeneity of transmission in different regions. To address this issue, we develop a human mobility flow-augmented stochastic SEIR-style epidemic modeling framework with the ability to distinguish different regions and their corresponding behaviors. This modeling framework is then combined with data assimilation and machine learning techniques to reconstruct the historical growth trajectories of COVID-19 confirmed cases in two counties in Wisconsin. The associations between the spread of COVID-19 and business foot traffic, race and ethnicity, and age structure are then investigated. The results reveal that, in a college town (Dane County), the most important heterogeneity is age structure, while, in a large city area (Milwaukee County), racial and ethnic heterogeneity becomes more apparent. Scenario studies further indicate a strong response of the spread rate to various reopening policies, which suggests that policy makers may need to take these heterogeneities into account very carefully when designing policies for mitigating the ongoing spread of COVID-19 and reopening.},
   title={Intracounty modeling of COVID-19 infection with human mobility: Assessing spatial heterogeneity with business traffic, age, and race},
   author={Hou, Xiao and Gao, Song and Li, Qin and Kang, Yuhao and Chen, Nan and Chen, Kaiping and Rao, Jinmeng and Ellenberg, Jordan S and Patz, Jonathan A},
   journal={Proceedings of the National Academy of Sciences},
@@ -317,11 +367,17 @@
   number={24},
   pages={e2020524118},
   year={2021},
-  publisher={National Academy of Sciences}
+  publisher={National Academy of Sciences},
+  html={https://www.pnas.org/doi/10.1073/pnas.2020524118},
+  preview={pnas.jpg},
+  code={https://github.com/GeoDS/IntraCounty-Mobility-SEIR},
+  selected={false}
 }
 
-
 @article{peng2021urban,
+  abbr={IEEE T-ITS},
+  bibtex_show={true},
+  abstract={With the development of the economy and the acceleration of urbanization, traffic congestion has become a worldwide problem. Advances in mobile Internet and sensor technologies have increased real-time data sharing, providing a new opportunity for urban route planning. However, due to the difficulty of handling complex global information, making correct decisions in large-scale and complex traffic environments is a problem that urgently needs to be solved. In this paper, a multiple route planning model (multi-route dynamic programming (DP) model) is proposed to solve the urban route planning problem with traffic flow information. In particular, we adopt the DP algorithm in this model, design a reward function suitable for urban path planning problems, and generate multiple routes based on the Q values. In addition, we design different scenarios using real-world road networks to test our model. Through the experiments, we demonstrate that our model has the potential to yield optimal results under large-scale scenarios with high efficiency. The advantages of integrating the distance contribution index (DCI) in the reward function are also elaborated. Moreover, our model can provide alternative routes to divert traffic from the optimal route, thus mitigating the congestion drift problem.},
   title={Urban multiple route planning model using dynamic programming in reinforcement learning},
   author={Peng, Ningyezi and Xi, Yuliang and Rao, Jinmeng and Ma, Xiangyuan and Ren, Fu},
   journal={IEEE Transactions on Intelligent Transportation Systems},
@@ -329,52 +385,91 @@
   number={7},
   pages={8037--8047},
   year={2021},
-  publisher={IEEE}
+  publisher={IEEE},
+  html={https://ieeexplore.ieee.org/document/9440854},
+  preview={planning.png},
+  selected={false}
 }
 
 @article{rao2021multi,
+  abbr={JGSA},
+  bibtex_show={true},
+  abstract={In this paper, we design and implement a map dashboard that combines spatio-temporal visualization and interactive narrative to comprehensively illustrate the 2020 US presidential election. Specifically, our dashboard takes campaign rallies and major events as narrative clues and integrates multi-perspective factors (e.g., the spatial spread of COVID-19, social distancing adherence, poll results) for visualization and statistical analysis. Compared with traditional methods and products, our integrated multi-perspective solution better balances the narrative property and the geovisualization property of a dashboard, making it suitable for illustrating social or political events that happened on a large geographic scale. The result shows that our narrative-based geovisualization dashboard may be used for demonstrating and associating multiple factors with partisanship and has the potential to help users explore the interaction between policies controlling COVID-19, social distancing, and partisanship across the country during the 2020 US presidential election.},
   title={A multi-perspective narrative-based geovisualization dashboard for the 2020 US presidential election},
   author={Rao, Jinmeng and Chen, Kexin and Yang, Ellie Fan and Kruse, Jacob and Hudson, Kyler and Gao, Song},
   journal={Journal of Geovisualization and Spatial Analysis},
   volume={5},
   pages={1--15},
   year={2021},
-  publisher={Springer International Publishing}
+  publisher={Springer International Publishing},
+  html={https://link.springer.com/article/10.1007/s41651-021-00087-6},
+  preview={jgsa.webp},
+  website={https://www.arcgis.com/apps/dashboards/eb6a099bc74a45ba82971f731d9b717d},
+  selected={false}
 }
 
-@article{杜田2020基于,
-  title={基于 Python 的多源地理数据高效质检系统},
-  author={杜田 and 许大璐 and 朱校娟 and 饶锦蒙 and 杜清运},
+@article{du2020geo,
+  abbr={CHINESE},
+  bibtex_show={true},
+  abstract={For the ever-increasing massive geospatial big data and increasingly complex data quality inspection requirements, we design a comprehensive spatial data quality inspection system based on Python and QT framework. We use open source third-party tool libraries and independent research algorithms to process multiple types of spatial geographic big data, and combine with multi-process and multi-threading technology to improve quality inspection efficiency. The system uses the infrastructure development to achieve the indicator items of data quality inspection. The system can import flexible quality inspection rules, and export quality inspection logs and quality inspection results reports, and verify the feasibility, expandability and efficiency of the system in production practice.},
+  title={Multi-source Geographic Data Efficient Quality Inspection System Based on Python},
+  author={Du, Tian and Xu, Dalu and Zhu, Xiaojuan and Rao, Jinmeng and Du, Qingyun},
   year={2020},
-  publisher={测绘地理信息}
+  publisher={Journal of Geomatics},
+  html={http://www.xml-data.org/CHDLXX/html/f2e23850-c15d-4e7b-8aba-5ac6831cc28c.htm},
+  preview={python_geo.jpeg},
+  code={https://github.com/JinmengRao/Geospatial-Data-Processing-System},
+  selected={false}
 }
 
-@article{乔延军2017面向户外增强现实的地理实体目标检测,
-  title={面向户外增强现实的地理实体目标检测},
-  author={乔延军 and 饶锦蒙 and 王骏星 and 杜清运 and 任福},
-  journal={地理信息世界},
+@article{qiao2017outdoorar,
+  abbr={CHINESE},
+  bibtex_show={true},
+  abstract={This paper studies the convolutional neural network model for image classification and object detection in the field of computer vision, and modifies an object detection model which combines Res Net structures to solve the problem of geographic object detection in outdoor augmented reality. An outdoor augmented reality system is developed with the use of the proposed model trained as an object detection engine, which achieves the near-real-time performance and high accuracy.},
+  title={Geographic Object Detection for Outdoor Augmented Reality},
+  author={Qiao, Yanjun and Rao, Jinmeng and Wang, Junxing and Du, Qingyun and Ren, Fu},
+  journal={Geomatics World},
   volume={24},
   number={5},
   pages={51--55},
-  year={2017}
+  year={2017},
+  html={http://en.cnki.com.cn/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=CHRK201705011&uniplatform=OVERSEA&v=rwzjvYnfVdJ5IFglfb_ohKRBYi-wdsbPFflrATZvXrcyr6rQyZACZ8QmrG_Xp15S},
+  preview={cn_oar.jpeg},
+  selected={false}
 }
 
-@article{liang2019analyzing,
+@inproceedings{liang2019analyzing,
+  abbr={ACM SIGSPATIAL RAAS},
+  bibtex_show={true},
+  abstract={Location uncertainty plays a key role in location-based services and applications. This research mainly focuses on the problem of location uncertainty when users are using the ride-hailing applications from the perspective of geographical contexts. The distance gap between the ride-hailing identified search location and the actual pick-up location was calculated and used as the measurement of location uncertainty. It may come from GPS noise or the gap between the current location of a passenger (eg, inside a building or a university campus) and the actual pick-up location along the streets for a ride. For the geographical contexts, this study considers factors including population density, road density, various kinds of Points Of Interests (POIs), and also the frequency of ride-hailing requests given a region. By using regression analysis techniques to find the relation between the geographical contexts and the distance gap, this study identifies potential factors (eg, enterprise buildings, dense roads, and highly populated areas) that affect the location uncertainty the most.},
   title={Analyzing the Gap Between Ride-hailing Location and Pick-up Location with Geographical Contexts},
   author={Liang, Yunlei and Gao, Song and Li, Mingxiao and Kang, Yuhao and Rao, Jinmeng},
-  year={2019}
+  year={2019},
+  booktitle={Proceedings of the 1st ACM SIGSPATIAL International Workshop on Ride-hailing Algorithms, Applications, and Systems},
+  html={https://geography.wisc.edu/geods/wp-content/uploads/sites/28/2022/05/2019_RAAS_DidiLocationGap.pdf},
+  preview={raas.png},
+  selected={false}
 }
 
 @article{gao2019exploring,
+  abbr={JOSIS},
+  bibtex_show={true},
+  abstract={With the ubiquitous use of location-based services, large-scale individual-level location data has been widely collected through location-awareness devices. Geoprivacy concerns arise on the issues of user identity de-anonymization and location exposure. In this work, we investigate the effectiveness of geomasking techniques for protecting the geoprivacy of active Twitter users who frequently share geotagged tweets in their home and work locations. By analyzing over 38,000 geotagged tweets of 93 active Twitter users in three U.S. cities, the two-dimensional Gaussian masking technique with proper standard deviation settings is found to be more effective to protect user's location privacy while sacrificing geospatial analytical resolution than the random perturbation masking method and the aggregation on traffic analysis zones. Furthermore, a three-dimensional theoretical framework considering privacy, analytics, and uncertainty factors simultaneously is proposed to assess geomasking techniques. Our research offers insights into geoprivacy concerns of social media users' georeferenced data sharing for future development of location-based applications and services.},
   title={Exploring the effectiveness of geomasking techniques for protecting the geoprivacy of Twitter users},
   author={Gao, Song and Rao, Jinmeng and Liu, Xinyi and Kang, Yuhao and Huang, Qunying and App, Joseph},
   journal={Journal of Spatial Information Science},
   number={19},
   pages={105--129},
-  year={2019}
+  year={2019},
+  html={https://josis.org/index.php/josis/article/view/107},
+  preview={josis.png},
+  selected={false}
 }
 
 @article{rao2017mobile,
+  abbr={SENSORS},
+  bibtex_show={true},
+  abstract={The purpose of this study was to develop a robust, fast and markerless mobile augmented reality method for registration, geovisualization and interaction in uncontrolled outdoor environments. We propose a lightweight deep-learning-based object detection approach for mobile or embedded devices; the vision-based detection results of this approach are combined with spatial relationships by means of the host device’s built-in Global Positioning System receiver, Inertial Measurement Unit and magnetometer. Virtual objects generated based on geospatial information are precisely registered in the real world, and an interaction method based on touch gestures is implemented. The entire method is independent of the network to ensure robustness to poor signal conditions. A prototype system was developed and tested on the Wuhan University campus to evaluate the method and validate its results. The findings demonstrate that our method achieves a high detection accuracy, stable geovisualization results and interaction.},
   title={A mobile outdoor augmented reality method combining deep learning object detection and spatial relationships for geovisualization},
   author={Rao, Jinmeng and Qiao, Yanjun and Ren, Fu and Wang, Junxing and Du, Qingyun},
   journal={Sensors},
@@ -382,5 +477,8 @@
   number={9},
   pages={1951},
   year={2017},
-  publisher={MDPI}
+  publisher={MDPI},
+  html={https://www.mdpi.com/1424-8220/17/9/1951},
+  preview={sensors_moar.png},
+  selected={false}
 }

@@ -179,6 +179,9 @@ collections:
   awards:
     output: true
     permalink: /awards/:path/
+  talks:
+    output: true
+    permalink: /talks/:path/
 
 announcements:
   enabled: true
@@ -347,7 +350,7 @@ imagemagick:
     - ".png"
     - ".tiff"
   output_formats:
-    webp: "-resize 1600x"
+    webp: "-resize 800x"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
