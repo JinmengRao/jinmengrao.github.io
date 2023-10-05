@@ -1,7 +1,7 @@
           <div class="news">
             {% if site.awards != blank -%}
             {%- assign awards_size = site.awards | size -%}
-            <div class="table-responsive" style="max-height: 60vw">
+            <div class="table-responsive">
               <table class="table table-sm table-borderless" cellspacing="0">
               {%- assign awards = site.awards | reverse -%}
               {% if include.limit %}
