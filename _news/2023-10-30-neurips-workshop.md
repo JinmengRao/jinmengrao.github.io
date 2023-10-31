@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our multiple posters are accepted for [NeurIPS 2023](https://neurips.cc/) workshops.
+Our multiple papers are accepted for [NeurIPS 2023](https://neurips.cc/) workshops as posters.
