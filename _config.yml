@@ -8,7 +8,7 @@ middle_name:
 last_name: Rao
 email: jinmengrao@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jinmeng Rao is a Geospatial AI (GeoAI) researcher and Senior Research Engineer at Google DeepMind,
+  Jinmeng Rao is a Staff AI Researcher at Google DeepMind and a Geospatial AI (GeoAI) researcher,
   2024 AAG William L. Garrison Award recipient, and Demo Track Co-chair of ACM SIGSPATIAL 2026.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
