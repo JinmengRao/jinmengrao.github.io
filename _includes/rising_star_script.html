@@ -1,0 +1,52 @@
+<!-- Rising Star page interactions. ES5 only: production build runs uglifier. -->
+<script>
+(function () {
+  var reveals = document.querySelectorAll('#rs-page .rs-reveal');
+  var counters = document.querySelectorAll('#rs-page .rs-count');
+
+  function fmt(n) {
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  function runCounter(el) {
+    if (el.getAttribute('data-done')) { return; }
+    el.setAttribute('data-done', '1');
+    var to = parseInt(el.getAttribute('data-to'), 10) || 0;
+    var start = null;
+    var dur = 1600;
+    function step(ts) {
+      if (start === null) { start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(Math.round(to * eased));
+      if (p < 1) { window.requestAnimationFrame(step); }
+    }
+    el.textContent = '0';
+    window.requestAnimationFrame(step);
+  }
+
+  var i;
+  if (!('IntersectionObserver' in window)) {
+    for (i = 0; i < reveals.length; i++) { reveals[i].className += ' rs-in'; }
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    for (var j = 0; j < entries.length; j++) {
+      var e = entries[j];
+      if (e.isIntersecting) {
+        var t = e.target;
+        if (t.className.indexOf('rs-in') === -1) { t.className += ' rs-in'; }
+        var cs = t.querySelectorAll('.rs-count');
+        for (var k = 0; k < cs.length; k++) { runCounter(cs[k]); }
+        io.unobserve(t);
+      }
+    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  for (i = 0; i < reveals.length; i++) {
+    reveals[i].style.transitionDelay = ((i % 3) * 0.08) + 's';
+    io.observe(reveals[i]);
+  }
+})();
+</script>
