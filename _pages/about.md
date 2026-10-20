@@ -20,7 +20,7 @@ talks: true # talks
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a **Staff AI Researcher at [Google DeepMind](https://deepmind.google/)** and a **Geospatial AI (GeoAI) researcher**. My work sits at the intersection of frontier AI and geographic information science: I build large-scale AI systems, and I work to bring the latest advances in foundation models, privacy-preserving AI, and agentic AI to geospatial research and industry.
+I am a **Staff AI Researcher at [Google DeepMind](https://deepmind.google/)**. My work sits at the intersection of frontier AI and geographic information science: I build large-scale AI systems, and I work to bring the latest advances in foundation models, privacy-preserving AI, and agentic AI to geospatial research and industry.
 
 At Google DeepMind, I have contributed to [Gemini 2.5](https://arxiv.org/abs/2507.06261), Gemini 3, and Gemini 4 Argon, focusing on post-training and evaluation for Gemini's long-context, coding, and agentic capabilities. Previously, I was a research scientist at [Mineral](https://x.company/projects/mineral/), Alphabet's computational agriculture moonshot, and an AI resident at [Google \[X\]](https://x.company), where I worked on multimodal LLMs and retrieval-augmented generation for agriculture and earth observation.
 
