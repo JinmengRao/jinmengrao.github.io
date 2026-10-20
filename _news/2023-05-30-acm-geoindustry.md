@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I served as the co-chair of the GeoIndustry workshop at [ACM SIGSPATIAL 2023](https://sigspatial2023.sigspatial.org/).
+I served as a program co-chair of the GeoIndustry workshop at [ACM SIGSPATIAL 2023](https://sigspatial2023.sigspatial.org/).

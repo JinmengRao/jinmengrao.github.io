@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**William L. Garrison Award for Best Dissertation in Computational Geography**, American Association of Geographers (AAG)
+**William L. Garrison Award for Best Dissertation in Computational Geography**, American Association of Geographers (AAG); awarded to one recipient every two years
