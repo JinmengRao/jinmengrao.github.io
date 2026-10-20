@@ -28,14 +28,14 @@ I received my Ph.D. in Geographic Information Science and my M.S. in Computer Sc
 
 **Research.** My geospatial research spans GeoAI, geoprivacy and trajectory privacy (e.g., [LSTM-TrajGAN](https://doi.org/10.4230/LIPIcs.GIScience.2021.I.12), CATS, privacy-preserving and secure GeoAI foundation models), human mobility, and computational agriculture. During COVID-19, I co-developed one of the first mobility-based social distancing maps in the U.S. and a multiscale human mobility flow dataset. This work, published in *PNAS*, *JAMA Network Open*, and *Scientific Data*, has been widely used in public health research and covered by NBC, FOX, and ABC.
 
-**Community.** I am deeply engaged in the geospatial community. I serve as **Demo Track Co-chair of [ACM SIGSPATIAL 2026](https://sigspatial2026.sigspatial.org/organizers.html)**. I also co-organize several SIGSPATIAL events: the [OASIS 2026](https://rsvp.withgoogle.com/events/oasis-2026/) student challenge on open agents with spatial intelligence for social good, the [UMFM 2026](https://rsvp.withgoogle.com/events/sigspatial-2026-umfm-workshop) workshop on urban mobility foundation models, and the [GeoIndustry](https://geoindustry.github.io/geoindustryworkshop2026/) workshop series (2023&ndash;2026). In addition, I co-chair GeoAI symposium sessions at the AAG Annual Meeting (2022&ndash;present) and co-founded [GISphere](https://gisphere.info/), a non-profit that helps students worldwide pursue GIS education.
+**Community.** I am deeply engaged in the geospatial community. I serve as **Demo Track Co-chair of [ACM SIGSPATIAL 2026](https://sigspatial2026.sigspatial.org/organizers.html)**. I also co-organize several SIGSPATIAL events: the [OASIS 2026](https://rsvp.withgoogle.com/events/oasis-2026/) student challenge on open agents with spatial intelligence for social good, the [UMFM 2026](https://rsvp.withgoogle.com/events/sigspatial-2026-umfm-workshop) workshop on urban mobility foundation models, and the [GeoIndustry](https://geoindustry.github.io/geoindustryworkshop2026/) workshop series (2023&ndash;2026). In addition, I have organized GeoAI symposium sessions at the AAG Annual Meeting every year since 2022 (as symposium co-chair since 2023), and I co-founded [GISphere](https://gisphere.info/), a non-profit that helps students worldwide pursue GIS education.
 
 <div class="card mt-3 mb-3 p-3" markdown="1">
 **Highlights**
 
 - 🏆 **2024 AAG William L. Garrison Award** for Best Dissertation in Computational Geography
 - 🌐 **Demo Track Co-chair, ACM SIGSPATIAL 2026**; organizer of **OASIS 2026**, **UMFM 2026**, and **GeoIndustry 2023&ndash;2026**
-- 🗺️ AAG GeoAI symposium co-chair and session organizer since 2022
+- 🗺️ AAG GeoAI session organizer since 2022 and symposium co-chair since 2023
 - 🎓 Co-founder and Director of **GISphere** (since 2019), a non-profit that promotes global GIS education
 - 🤖 Team member for **Gemini 2.5 and Gemini 3** at Google DeepMind
 - 📈 9,000+ citations on [Google Scholar](https://scholar.google.com/citations?user=PpZvHlUAAAAJ); publications in *PNAS*, *JAMA Network Open*, *Scientific Data*, *IJGIS*, ACM SIGSPATIAL, SIGIR, AAAI, NAACL, and COLM
