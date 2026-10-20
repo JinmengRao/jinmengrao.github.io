@@ -27,7 +27,7 @@ nav: false
   </header>
 
   <p class="rs-intro" id="rs-intro">
-    This page summarizes my work for the Geospatial World 50 Rising Stars 2027 nomination committee. It follows the three areas in the nomination form (accomplishments, impact on the geospatial industry, and aspiration), followed by recognition, service, and links to supporting evidence.
+    This page summarizes my work for the Geospatial World 50 Rising Stars 2027 nomination committee. My geospatial work centers on three areas: <strong>geoprivacy</strong> (methods that let location data be shared and analyzed while protecting individuals), <strong>public health</strong> (mobility analytics for the COVID-19 response), and <strong>community building</strong> (venues that connect geospatial industry, academia, and students). The page follows the three areas in the nomination form (accomplishments, impact on the geospatial industry, and aspiration), followed by recognition, service, and supporting links.
   </p>
 
   <!-- ============ AT A GLANCE ============ -->
@@ -37,7 +37,7 @@ nav: false
       <tr><th>Current position</th><td>Staff AI Researcher, Google DeepMind. Core contributor to Gemini 2.5, Gemini 3, and Gemini 4 Argon.</td></tr>
       <tr><th>Previous positions</th><td>Research Scientist, Mineral (Alphabet's computational agriculture project), 2022&ndash;2024; AI Resident, Google X, 2021&ndash;2022; Research Intern, Sturfee Inc., 2020</td></tr>
       <tr><th>Education</th><td>Ph.D. in Geographic Information Science and M.S. in Computer Sciences, University of Wisconsin&ndash;Madison; B.S. and M.S. in GIS, Wuhan University</td></tr>
-      <tr><th>Research areas</th><td>Geospatial AI; geoprivacy and trajectory privacy; human mobility; spatial representation learning; multimodal and retrieval-augmented AI for agriculture and Earth observation</td></tr>
+      <tr><th>Research areas</th><td>Geoprivacy and trajectory privacy; human mobility and public health; Geospatial AI and GeoAI foundation models; AI for agriculture and Earth observation</td></tr>
       <tr><th>Key recognition</th><td>2024 AAG William L. Garrison Award for Best Dissertation in Computational Geography (awarded to one recipient every two years)</td></tr>
       <tr><th>Publications</th><td>60+ publications, including papers, book chapters, and patents. 9,000+ citations and an h-index of 35 on Google Scholar (October 2026).</td></tr>
       <tr><th>Global reach</th><td>Research cited in 1,600+ publications by authors in 81 countries (OpenAlex, October 2026; self-citations excluded). See the <a href="#rs-reach">map</a>.</td></tr>
@@ -58,23 +58,10 @@ nav: false
   <section id="rs-accomplishments" class="rs-section">
     <h2 class="rs-h2"><span class="rs-num">1</span>Accomplishments</h2>
 
-    <div class="rs-item" id="rs-acc-covid">
-      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/mobmap.gif' | relative_url }}" alt="County-level mobility change map, United States, March 2020">
-      <div>
-        <h3>Human mobility analytics for COVID-19 response (2020&ndash;2021)</h3>
-        <ul>
-          <li>Co-developed one of the first mobility-based social distancing maps and <a href="https://geography.wisc.edu/covid19/physical-distancing/" target="_blank" rel="noopener">dashboards</a> in the U.S. at the UW&ndash;Madison GeoDS Lab (<a href="https://dl.acm.org/doi/10.1145/3404820.3404824" target="_blank" rel="noopener"><em>SIGSPATIAL Special</em>, 2020</a>, 410+ citations). The tools used commercial location data (SafeGraph, Descartes Labs) and ArcGIS Dashboards, and were covered by local NBC, ABC, and FOX stations.</li>
-          <li>Co-authored a multiscale dynamic human mobility flow dataset (<a href="https://www.nature.com/articles/s41597-020-00734-5" target="_blank" rel="noopener"><em>Scientific Data</em></a>, 380+ citations) and studies linking mobility and infection (<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2770249" target="_blank" rel="noopener"><em>JAMA Network Open</em></a>, 270+ citations; <a href="https://www.pnas.org/doi/10.1073/pnas.2020524118" target="_blank" rel="noopener"><em>PNAS</em></a>, 190+ citations).</li>
-          <li>This work has been cited in <em>Nature</em> (<a href="https://doi.org/10.1038/s41586-020-2923-3" target="_blank" rel="noopener">Chang et al., 2021</a>; <a href="https://doi.org/10.1038/s41586-021-03694-x" target="_blank" rel="noopener">Buckee et al., 2021</a>) and <em>PNAS</em> (<a href="https://doi.org/10.1073/pnas.2121675119" target="_blank" rel="noopener">Thomas et al., 2022</a>). The research was supported in part by the NSF.</li>
-          <li><strong>Uptake:</strong> the open flow dataset (<a href="https://github.com/GeoDS/COVID19USFlows" target="_blank" rel="noopener">GitHub</a>, 150+ stars) became a widely used input for mobility and epidemic modeling. For example, the Deep Gravity mobility-flow model co-developed by Amazon researchers (<a href="https://doi.org/10.1038/s41467-021-26752-4" target="_blank" rel="noopener"><em>Nature Communications</em>, 2021</a>) was evaluated on it. Industry research teams at Microsoft Research (<a href="https://doi.org/10.1038/s41586-020-2923-3" target="_blank" rel="noopener"><em>Nature</em>, 2021</a>), Google (<a href="https://doi.org/10.1038/s41467-021-23404-5" target="_blank" rel="noopener"><em>Nature Communications</em>, 2021</a>), Meta, Tencent, Orange, IQVIA, and DiDi (<a href="https://doi.org/10.1145/3774904.3792789" target="_blank" rel="noopener">WWW 2026</a>) drew on these results in their own mobility and epidemic studies.</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="rs-item" id="rs-acc-privacy">
       <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/trajgan.png' | relative_url }}" alt="LSTM-TrajGAN model architecture">
       <div>
-        <h3>Geoprivacy and privacy-preserving GeoAI (2019&ndash;present)</h3>
+        <h3>Geoprivacy: responsible use of location data (2019&ndash;present)</h3>
         <ul>
           <li>Proposed LSTM-TrajGAN (<a href="https://drops.dagstuhl.de/opus/volltexte/2020/13047/" target="_blank" rel="noopener">GIScience 2021</a>, 270+ citations), a deep generative model for privacy-preserving synthetic trajectories, released as <a href="https://github.com/GeoDS/LSTM-TrajGAN" target="_blank" rel="noopener">open-source code</a> (80+ stars, 30+ forks).</li>
           <li>Proposed CATS (<a href="https://arxiv.org/abs/2309.11587" target="_blank" rel="noopener"><em>IJGIS</em>, 2023</a>) for conditional adversarial trajectory synthesis in privacy-preserving data publication. Also developed a decentralized, privacy-preserving framework for location recommendation (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.12769" target="_blank" rel="noopener"><em>Transactions in GIS</em></a>, 2021) and VTSV, a privacy-preserving vehicle trajectory simulation platform (<a href="https://dl.acm.org/doi/10.1145/3486635.3491073" target="_blank" rel="noopener">ACM SIGSPATIAL GeoAI 2021</a>).</li>
@@ -85,27 +72,42 @@ nav: false
       </div>
     </div>
 
-    <div class="rs-item" id="rs-acc-fm">
-      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/trajganr.png' | relative_url }}" alt="TRAJGANR trajectory and street-view alignment illustration">
+    <div class="rs-item" id="rs-acc-covid">
+      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/mobmap.gif' | relative_url }}" alt="County-level mobility change map, United States, March 2020">
       <div>
-        <h3>GeoAI foundation models and spatial representation learning (2023&ndash;present)</h3>
+        <h3>Public health: mobility analytics for COVID-19 response (2020&ndash;2021)</h3>
         <ul>
-          <li>Co-authored <em>Towards the Next Generation of Geospatial Artificial Intelligence</em> (<a href="https://doi.org/10.1016/j.jag.2025.104368" target="_blank" rel="noopener"><em>JAG</em>, 2025</a>, 220+ citations), a research agenda for GeoAI in the foundation-model era.</li>
-          <li>Co-developed SRL, a general-purpose framework for spatial representation learning (<a href="https://doi.org/10.1145/3678717.3691246" target="_blank" rel="noopener">ACM SIGSPATIAL 2024</a>), and TRAJGANR (<a href="https://arxiv.org/abs/2605.06990" target="_blank" rel="noopener">arXiv, 2026</a>), on trajectory-centric urban multimodal learning, with collaborators from academia and industry.</li>
-          <li>Co-authored book chapters on GeoAI methodological foundations (2023), the evolution of GeoAI (2025), and the ethics of generative GeoAI (2026).</li>
-          <li><strong>Uptake:</strong> this agenda is drawn on by geospatial foundation-model work in industry, including Esri (GeoAI review, <a href="https://doi.org/10.1016/j.isprsjprs.2026.08.001" target="_blank" rel="noopener"><em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 2026</a>), InferLink (LineLM, an operational language model for geospatial vector data, <a href="https://doi.org/10.1145/3770855.3818441" target="_blank" rel="noopener">KDD 2026</a>), and Meituan (GIS large language models, <a href="https://doi.org/10.1080/13658816.2025.2591830" target="_blank" rel="noopener"><em>IJGIS</em>, 2025</a>).</li>
+          <li>Co-developed one of the first mobility-based social distancing maps and <a href="https://geography.wisc.edu/covid19/physical-distancing/" target="_blank" rel="noopener">dashboards</a> in the U.S. at the UW&ndash;Madison GeoDS Lab (<a href="https://dl.acm.org/doi/10.1145/3404820.3404824" target="_blank" rel="noopener"><em>SIGSPATIAL Special</em>, 2020</a>, 410+ citations). The tools used commercial location data (SafeGraph, Descartes Labs) and ArcGIS Dashboards, and were covered by local NBC, ABC, and FOX stations.</li>
+          <li>Co-authored a multiscale dynamic human mobility flow dataset (<a href="https://www.nature.com/articles/s41597-020-00734-5" target="_blank" rel="noopener"><em>Scientific Data</em></a>, 380+ citations) and studies linking mobility and infection (<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2770249" target="_blank" rel="noopener"><em>JAMA Network Open</em></a>, 270+ citations; <a href="https://www.pnas.org/doi/10.1073/pnas.2020524118" target="_blank" rel="noopener"><em>PNAS</em></a>, 190+ citations).</li>
+          <li>This work has been cited in <em>Nature</em> (<a href="https://doi.org/10.1038/s41586-020-2923-3" target="_blank" rel="noopener">Chang et al., 2021</a>; <a href="https://doi.org/10.1038/s41586-021-03694-x" target="_blank" rel="noopener">Buckee et al., 2021</a>) and <em>PNAS</em> (<a href="https://doi.org/10.1073/pnas.2121675119" target="_blank" rel="noopener">Thomas et al., 2022</a>). The research was supported in part by the NSF.</li>
+          <li><strong>Uptake:</strong> the open flow dataset (<a href="https://github.com/GeoDS/COVID19USFlows" target="_blank" rel="noopener">GitHub</a>, 150+ stars) became a widely used input for mobility and epidemic modeling. For example, the Deep Gravity mobility-flow model co-developed by Amazon researchers (<a href="https://doi.org/10.1038/s41467-021-26752-4" target="_blank" rel="noopener"><em>Nature Communications</em>, 2021</a>) was evaluated on it. Industry research teams at Microsoft Research (<a href="https://doi.org/10.1038/s41586-020-2923-3" target="_blank" rel="noopener"><em>Nature</em>, 2021</a>), Google (<a href="https://doi.org/10.1038/s41467-021-23404-5" target="_blank" rel="noopener"><em>Nature Communications</em>, 2021</a>), Meta, Tencent, Orange, IQVIA, and DiDi (<a href="https://doi.org/10.1145/3774904.3792789" target="_blank" rel="noopener">WWW 2026</a>) drew on these results in their own mobility and epidemic studies.</li>
         </ul>
       </div>
     </div>
 
-    <div class="rs-item" id="rs-acc-industry">
-      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/imrag.png' | relative_url }}" alt="IM-RAG multi-round retrieval-augmented generation overview">
+    <div class="rs-item" id="rs-acc-community">
+      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/tgis_edu.jpg' | relative_url }}" alt="GISphere survey of prospective GIS graduate students">
       <div>
-        <h3>Applied AI in industry (2021&ndash;present)</h3>
+        <h3>Community building: connecting industry, academia, and students (2019&ndash;present)</h3>
         <ul>
-          <li>At Mineral (Alphabet), worked on multimodal LLMs and retrieval-augmented generation for agriculture and Earth observation, including <a href="https://arxiv.org/abs/2405.13021" target="_blank" rel="noopener">IM-RAG</a> (SIGIR 2024) and Insight Miner (NeurIPS 2023 AI for Science Workshop).</li>
-          <li>Co-inventor of U.S. Patent 12,462,551 (<em>Tracking Objects with Changing Appearances</em>) and of two published U.S. patent applications: <em>Fusing Multimodal Environmental Data for Agricultural Inference</em> and <em>Multimodal Model for Agricultural Insight Mining from Time Series Agricultural Information</em>.</li>
-          <li>At Google DeepMind, works on post-training and evaluation of Gemini models (Gemini 2.5, Gemini 3, Gemini 4 Argon).</li>
+          <li>Co-founded and directs <a href="https://gisphere.info/" target="_blank" rel="noopener">GISphere</a> (since 2019), a non-profit that helps students worldwide find and apply to GIS graduate programs, supporting the future geospatial workforce. Its survey of prospective GIS students is published in <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/tgis.13037" target="_blank" rel="noopener"><em>Transactions in GIS</em>, 2023</a>.</li>
+          <li>Program Co-chair of the ACM SIGSPATIAL <a href="https://geoindustry.github.io/geoindustryworkshop2026/" target="_blank" rel="noopener">GeoIndustry Workshop</a> for four consecutive editions (2023&ndash;2026), a venue built to reduce siloed efforts between geospatial industry and academia (<a href="#rs-geoindustry">details</a>).</li>
+          <li>Demo Track Co-chair of <a href="https://sigspatial2026.sigspatial.org/organizers.html" target="_blank" rel="noopener">ACM SIGSPATIAL 2026</a>, and organizer of the <a href="https://rsvp.withgoogle.com/events/oasis-2026/" target="_blank" rel="noopener">OASIS 2026</a> student challenge on open agents with spatial intelligence for social good (co-organized with researchers from Google, Esri, and universities), for which I secured Google DeepMind sponsorship for student participants. Also organizer of the <a href="https://rsvp.withgoogle.com/events/sigspatial-2026-umfm-workshop" target="_blank" rel="noopener">UMFM 2026</a> workshop on urban mobility foundation models.</li>
+          <li>Co-chair of the GeoAI and Deep Learning Symposium at the AAG Annual Meeting (2023&ndash;2026) and GeoAI session organizer every year since 2022, including sessions on geoprivacy and ethics in GeoAI (2023).</li>
+          <li>Earlier service: Student Director of the AAG GIS Specialty Group (2021&ndash;2022), CPGIS committees (2022&ndash;2023), and volunteer for UN Mappers and the Wisconsin Land Information Association.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rs-item" id="rs-acc-other">
+      <img loading="lazy" class="rs-thumb" src="{{ '/assets/img/publication_preview/nextgen_geoai.jpg' | relative_url }}" alt="Next generation of GeoAI overview figure">
+      <div>
+        <h3>Broader GeoAI research and industry AI work</h3>
+        <ul>
+          <li><strong>GeoAI foundation models:</strong> co-authored <em>Towards the Next Generation of Geospatial Artificial Intelligence</em> (<a href="https://doi.org/10.1016/j.jag.2025.104368" target="_blank" rel="noopener"><em>JAG</em>, 2025</a>, 220+ citations), drawn on by industry work at Esri (<a href="https://doi.org/10.1016/j.isprsjprs.2026.08.001" target="_blank" rel="noopener"><em>ISPRS J. Photogramm. Remote Sens.</em>, 2026</a>), InferLink (<a href="https://doi.org/10.1145/3770855.3818441" target="_blank" rel="noopener">KDD 2026</a>), and Meituan (<a href="https://doi.org/10.1080/13658816.2025.2591830" target="_blank" rel="noopener"><em>IJGIS</em>, 2025</a>); co-developed SRL (<a href="https://doi.org/10.1145/3678717.3691246" target="_blank" rel="noopener">ACM SIGSPATIAL 2024</a>) and TRAJGANR (<a href="https://arxiv.org/abs/2605.06990" target="_blank" rel="noopener">arXiv, 2026</a>).</li>
+          <li><strong>Agriculture and Earth observation (Mineral, Alphabet):</strong> multimodal LLMs and retrieval-augmented generation, including <a href="https://arxiv.org/abs/2405.13021" target="_blank" rel="noopener">IM-RAG</a> (SIGIR 2024); co-inventor of U.S. Patent 12,462,551 and two published U.S. patent applications on multimodal agricultural inference.</li>
+          <li><strong>Transportation:</strong> urban multiple route planning with reinforcement learning (<a href="https://doi.org/10.1109/TITS.2021.3075221" target="_blank" rel="noopener"><em>IEEE T-ITS</em>, 2021</a>) and road network extraction from taxi GPS trajectories (<a href="https://link.springer.com/chapter/10.1007/978-3-030-55462-0_11" target="_blank" rel="noopener"><em>Handbook of Big Geospatial Data</em></a>).</li>
+          <li><strong>Google DeepMind:</strong> core contributor to Gemini 2.5, Gemini 3, and Gemini 4 Argon (post-training and evaluation).</li>
         </ul>
       </div>
     </div>
@@ -115,6 +117,13 @@ nav: false
   <section id="rs-impact" class="rs-section">
     <h2 class="rs-h2"><span class="rs-num">2</span>Impact on the geospatial industry</h2>
 
+    <h3 class="rs-h3" id="rs-relevance">Why this work matters to the geospatial industry</h3>
+    <ul>
+      <li><strong>Geoprivacy for the location-data industry.</strong> Companies that collect or analyze location data (mobile apps, mobility platforms, connected vehicles) need to share and analyze trajectories without exposing individuals. LSTM-TrajGAN and CATS generate synthetic trajectories that keep the useful patterns of real data while protecting privacy. Industry researchers have drawn on this work in vehicle-network privacy (State Grid, <em>IEEE T-ITS</em> 2022), trajectory privacy models (Lenovo, <em>FGCS</em> 2024), and trajectory-user linking (Rakuten, IEEE BigData 2022).</li>
+      <li><strong>Commercial location data for public health.</strong> The COVID-19 maps and datasets turned commercial mobility data (SafeGraph, Descartes Labs) into open information through Esri ArcGIS Dashboards, used by the public, local media, and public health researchers. The open flow dataset became a benchmark for mobility models, including the Deep Gravity model co-developed by Amazon researchers, and the work is drawn on by researchers at Microsoft Research, Google, Meta, Tencent, Orange, IQVIA, and DiDi.</li>
+      <li><strong>Community that links industry and academia.</strong> GeoIndustry, the SIGSPATIAL 2026 demo track, and the OASIS challenge (co-organized with Google and Esri researchers) give industry and academic teams shared venues, while GISphere helps students worldwide enter GIS graduate programs and the geospatial workforce.</li>
+    </ul>
+
     <h3 class="rs-h3" id="rs-reach">Global reach of the research</h3>
     <p>The map covers my geospatial and AI research, excluding large team technical reports such as Gemini. It shows where the authors of the 1,600+ distinct publications citing this work are based: 81 countries in total. Each citing publication is counted once, even if it cites several of my papers. Hover over a country to see its count.</p>
     <figure class="rs-map" id="rs-citation-map">
@@ -122,7 +131,7 @@ nav: false
       <figcaption>Source: OpenAlex (October 2026). Counts are citing publications with at least one author affiliated in each country. Self-citations and large team technical reports are excluded. Top countries: United States (642), China (531), United Kingdom (122), Japan (73), Germany (64), Canada (63), Italy (53), South Korea (52), India (48), Australia (42).</figcaption>
     </figure>
 
-    <h3 class="rs-h3">Connecting industry and academia through GeoIndustry (2023&ndash;2026)</h3>
+    <h3 class="rs-h3" id="rs-geoindustry">Connecting industry and academia through GeoIndustry (2023&ndash;2026)</h3>
     <p>I have served as a Program Co-chair of the <strong>ACM SIGSPATIAL International Workshop on Spatial Big Data and AI for Industrial Applications (GeoIndustry)</strong> for four consecutive editions, from the 2nd edition (Hamburg, 2023) to the 5th (Riverside, 2026). The workshop's stated goal is to reduce siloed efforts between industry and academia. Industry brings geospatial data and problems at scale, and academia brings new methods. The workshop gives both sides a recurring venue to exchange ideas through invited and regular talks.</p>
     <ul>
       <li>The program chairs and committee include researchers from Amazon, Google, Google DeepMind, Oracle, and PAII, together with faculty from the University of Wisconsin&ndash;Madison, the University of Maryland, UT Austin, Florida State University, and the University of Georgia.</li>
@@ -179,18 +188,9 @@ nav: false
     </table>
     <p class="rs-note">Other companies in the data include Baidu, Alibaba, Nokia, Canon, Ipsos, Merck, Nommon, LocationMind, IBI Group, and Tenaga Nasional Berhad.</p>
 
-    <h3 class="rs-h3">Research relevant to industry practice</h3>
-    <ul>
-      <li><strong>Responsible use of location data.</strong> Trajectory synthesis methods (LSTM-TrajGAN, CATS) and privacy-preserving GeoAI frameworks address a practical problem for location-data providers and users: sharing and analyzing mobility data while protecting individual privacy.</li>
-      <li><strong>Commercial data for public decisions.</strong> The COVID-19 mobility maps and datasets turned commercial location data into openly available information for public health researchers, local media, and the public.</li>
-      <li><strong>AI for agriculture and Earth observation.</strong> Multimodal data fusion and insight-mining methods were developed in an industrial setting at Mineral and filed as patents.</li>
-      <li><strong>Transportation.</strong> Co-authored work on urban multiple route planning with reinforcement learning (<a href="https://doi.org/10.1109/TITS.2021.3075221" target="_blank" rel="noopener"><em>IEEE T-ITS</em>, 2021</a>) and automatic road network extraction from taxi GPS trajectories (<a href="https://link.springer.com/chapter/10.1007/978-3-030-55462-0_11" target="_blank" rel="noopener"><em>Handbook of Big Geospatial Data</em></a>).</li>
-    </ul>
-
     <h3 class="rs-h3">Engagement with geospatial practitioners</h3>
     <ul>
       <li>Presented <em>Mapping Mobility Changes During COVID-19 Using ArcGIS Dashboards and Mobile Experience Builder</em> at the Esri Education sessions, AAG 2023. Also had an extended abstract on federated learning for location data accepted at the Esri User Conference (2020).</li>
-      <li>Co-founded and directs <a href="https://gisphere.info/" target="_blank" rel="noopener">GISphere</a> (since 2019), a non-profit that helps students worldwide find GIS graduate programs, supporting the future geospatial workforce. GISphere's survey of prospective GIS students is published in <em>Transactions in GIS</em> (2023).</li>
     </ul>
 
     <h3 class="rs-h3" id="rs-media">Media coverage</h3>
@@ -203,11 +203,11 @@ nav: false
   <!-- ============ ASPIRATION ============ -->
   <section id="rs-aspiration" class="rs-section">
     <h2 class="rs-h2"><span class="rs-num">3</span>Aspiration</h2>
-    <p>My goal is to help bring advances in AI into geospatial practice in a way that is useful, responsible, and open. Over the next several years, I hope to:</p>
+    <p>My goal is to help the geospatial industry use location data and AI in ways that are useful, responsible, and open. Over the next several years, I hope to:</p>
     <ul>
-      <li><strong>Make spatial reasoning a reliable capability of AI models and agents.</strong> This includes contributing benchmarks, challenges such as OASIS, and methods that let models reason about places, movement, and environmental change.</li>
-      <li><strong>Make privacy and accountability standard requirements for geospatial AI.</strong> Methods for protecting location data should be practical enough to be adopted by industry.</li>
-      <li><strong>Keep building venues where industry and academia work on shared problems.</strong> This includes GeoIndustry and SIGSPATIAL, and continuing to support students entering the geospatial field through GISphere.</li>
+      <li><strong>Make privacy protection a standard part of geospatial AI.</strong> Methods for protecting location data should be practical enough for location-data providers and mobility platforms to adopt by default, and should extend to geospatial foundation models and AI agents.</li>
+      <li><strong>Apply location data and spatial reasoning to public health and social good.</strong> This includes building benchmarks and challenges, such as OASIS, that test whether AI models and agents can reason reliably about places, movement, and environmental change.</li>
+      <li><strong>Keep building the community.</strong> Continue GeoIndustry and SIGSPATIAL venues where industry and academia work on shared problems, and continue supporting students entering the geospatial field through GISphere.</li>
     </ul>
   </section>
 
