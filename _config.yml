@@ -6,19 +6,20 @@ title: Jinmeng Rao # the website title (if blank, full name will be used instead
 first_name: Jinmeng
 middle_name: 
 last_name: Rao
-email: jinmengrao@google.com
+email: jinmengrao@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jinmeng Rao's personal website.
+  Jinmeng Rao is a Geospatial AI (GeoAI) researcher and Senior Research Engineer at Google DeepMind,
+  2024 AAG William L. Garrison Award recipient, and Demo Track Co-chair of ACM SIGSPATIAL 2026.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
-keywords:  # add your own keywords or leave empty
+keywords: GeoAI, Geospatial Artificial Intelligence, GIScience, GIS, SIGSPATIAL, trajectory privacy, human mobility, large language models, Gemini, Google DeepMind
 
 #  with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌎 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://jinmengrao.github.io # the base hostname & protocol for your site
+url: https://jinmengrao.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/  /al-folio
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -59,9 +60,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://jinmengrao.com/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration

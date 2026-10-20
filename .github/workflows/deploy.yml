@@ -20,16 +20,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2.2'
+        ruby-version: '3.2'
         bundler-cache: true
+    - name: Setup Python
+      # Ubuntu 24.04+ runners block system-wide pip installs (PEP 668); use an isolated Python instead.
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Install system dependencies
+      # jekyll-imagemagick needs ImageMagick, which is no longer preinstalled on newer runner images.
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick
     - name: Install and Build 🔧
       run: |
-        pip3 install --upgrade jupyter
-        npm install -g mermaid.cli
+        pip install --upgrade jupyter
         npm install -g purgecss
         export JEKYLL_ENV=production
         bundle exec jekyll build --lsi
@@ -39,4 +52,3 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-

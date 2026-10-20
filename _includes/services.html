@@ -7,7 +7,7 @@
               {% for item in services%}
                 {% if item.type contains 'program' %}
                 <tr>
-                  <th scope="row">{{ item.date | date: "%Y" }}</th>
+                  <th scope="row">{% if item.start_date %}{{ item.start_date | date: "%Y" }} - {% endif %}{% if item.present %}Present{% else %}{{ item.date | date: "%Y" }}{% endif %}</th>
                   <td>
                     {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
@@ -25,7 +25,8 @@
             <div class="table-responsive">
               <p><span  class="desc" style="font-size:14pt;">Reviewers</span></p>
               <ul>
-                <li>ACM SIGSPATIAL</li>
+                <li>Machine learning: NeurIPS, ICLR, ICML, AAAI, ACL, COLM (PC member / reviewer)</li>
+                <li>ACM SIGSPATIAL (PC member / reviewer since 2020)</li>
                 <li>ACM Transactions on Spatial Algorithms and Systems</li>
                 <li>Annals of GIS</li>
                 <li>Applied Computing and Geosciences</li>
@@ -60,7 +61,7 @@
               {% for item in services%}
                 {% if item.type contains 'professional' %}
                 <tr>
-                  <th scope="row">{{ item.start_date | date: "%Y" }} - {{ item.date | date: "%Y" }}</th>
+                  <th scope="row">{{ item.start_date | date: "%Y" }} - {% if item.present %}Present{% else %}{{ item.date | date: "%Y" }}{% endif %}</th>
                   <td>
                     {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
